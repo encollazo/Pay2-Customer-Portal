@@ -1,0 +1,2337 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+	<meta charset="utf-8" />
+	<title>My Dashboard</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no" />
+    <link rel="icon" type="image/png" sizes="512x512" href="img/favicon/osg-favicon-512x512.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/osg-favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/osg-favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-touch-fullscreen" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<meta content="" name="description" />
+	<meta content="" name="author" />
+	<link href="assets/plugins/pace/pace-theme-flash.css" rel="stylesheet" type="text/css" />
+	<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="assets/plugins/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
+	<link href="assets/plugins/jquery-scrollbar/jquery.scrollbar.css" rel="stylesheet" type="text/css" media="screen" />
+	<link href="assets/plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css" media="screen" />
+	<link href="assets/plugins/switchery/css/switchery.min.css" rel="stylesheet" type="text/css" media="screen" />
+	<link type="text/css" rel="stylesheet" href="assets/plugins/jquery-datatable/media/css/jquery.dataTables.css">
+	<link type="text/css" rel="stylesheet" href="assets/plugins/jquery-datatable/extensions/FixedColumns/css/dataTables.fixedColumns.min.css">
+	<link media="screen" type="text/css" rel="stylesheet" href="assets/plugins/datatables-responsive/css/datatables.responsive.css">
+	<link media="screen" type="text/css" rel="stylesheet" href="assets/plugins/bootstrap-datepicker/css/datepicker3.css">
+	<link href="assets/plugins/bootstrap-daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css" media="screen">
+
+	<link href="pages/css/pages-icons.css" rel="stylesheet" type="text/css">
+	<link class="main-stylesheet" href="pages/css/pages.css" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+</head>
+
+<style>
+@media screen and (min-width: 1200px) {
+    .pay-anytime {
+        width: 80px !important;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .pay-anytime {
+        width: 80px !important;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .pay-anytime {
+        min-width: 100% !important;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .button-text {
+        display: none !important;
+    }
+}
+
+#module #collapseExample.collapse:not(.show) {
+  display: block;
+  /* height = lineheight * no of lines to display */
+  height: 17.5em;
+  overflow: hidden;
+}
+
+#module #collapseExample.collapsing {
+  height: 17.5em;
+}
+
+.alert .close {
+    background: unset;
+    background-position: -9px -10px;
+    width: 10px;
+    height: 9px;
+    position: relative;
+    opacity: 0.8;
+    top: 0.5px;
+    float: right;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: unset;
+    font-family: FontAwesome;
+    content: "\25AE";
+}
+
+@media screen and (max-width: 768px) {
+    .alert-icon {
+        padding: 15px !important;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .alert-icon {
+        padding: 15px !important;
+    }
+}
+
+.alert-success {
+    background-color: #fff;
+    color: #333333;
+    border-color: #0a7c71;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 10px !important;
+}
+</style>
+
+<body class="horizontal-menu horizontal-app-menu loader-circle print-modal padding-0">
+	<!-- START PAGE-CONTAINER -->
+	<div class="header p-r-0 bg-primary">
+		<div class="header-inner header-md-height">
+			<a href="#" class="btn-link toggle-sidebar hidden-lg-up pg pg-menu text-white" data-toggle="horizontal-menu"></a>
+
+			<div class="no-border no-margin d-none d-sm-block logo-hide">
+				<img src="assets/img/logo_new.png" alt="logo" data-src="assets/img/logo_new.png">
+			</div>
+
+			<div class="d-flex align-items-center text-right">
+				<div class="pull-right">
+					<div class="d-flex align-items-center">
+						<a href="mailto:username@domain.com" class="text-white d-none d-sm-block">
+							username@domain.com
+						</a>
+
+						<span class="thumbnail-wrapper d32 circular m-l-10">
+							<span class="material-icons">account_circle</span>
+						</span>
+
+						<div class="dropdown">
+							<button class="profile-dropdown-toggle text-white p-l-0 p-r-0 m-l-10" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">
+								<span class="material-icons p-t-5">more_vert</span>
+							</button>
+
+							<div class="dropdown-menu dropdown-menu-right profile-dropdown m-t-10" role="menu">
+								<a href="customerprofile.html" class="dropdown-item"><i class="fa fa-user"></i>My profile</a>
+								<a href="#" class="dropdown-item"><i class="fa fa-bell"></i>Notification Settings</a>
+								<a href="#" class="dropdown-item" data-toggle="modal" data-target="#modalTerms"><i class="fa fa-shield"></i>Payment Agreement</a>
+								<a href="login_register.html" class="bg-master-lighter dropdown-item"><i class="fa fa-sign-out"></i>Sign Out</a>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--NEW NAV START-->
+		<div class="bg-white">
+				<div class="container-fluid">
+					<div class="row">
+							<div class="col-md-12 col-lg-12 offset-lg-1">
+									<div class="menu-bar header-sm-height">
+										<a href="#" class="btn-link toggle-sidebar d-lg-none pg pg-close" data-toggle="horizontal-menu"></a>
+										<!--NAV START-->
+										<div class="nav-margin">
+											<!--MY ACCOUNT-->
+											<div id="liSupport" class="active menusupport nodropdown">
+												<div class="nodropbtn">
+													<a href="home.html">My Dashboard</a>
+												</div>
+											</div>
+
+											<!--PAYMENT METHOD-->
+											<div id="liSupport" class="menusupport nodropdown">
+												<div class="nodropbtn">
+													<a href="paymentmethod.html">Payment Method</a>
+												</div>
+											</div>
+			
+											<!--SUPPORT-->
+											<div id="liSupport" class="menusupport nodropdown">
+												<div class="nodropbtn">
+													<a href="support.html">Support</a>
+												</div>
+											</div>
+			
+											<!--FAQs-->
+											<div id="liSupport" class="menusupport nodropdown">
+												<div class="nodropbtn">
+													<a href="faq.html">FAQ</a>
+												</div>
+											</div>
+															
+										</div>
+									</div>
+								</div>
+					</div>
+				</div>
+			</div>
+			<!--NEW NAV END-->
+	</div>
+
+<!--CONTAINER START-->
+<div class="container-fluid p-l-30 p-r-30 m-l-0 m-r-0 m-t-40">
+
+  <div class="alert alert-success alert-dismissible">
+  <a href="#" class="close" data-dismiss="alert" aria-label="close"><span class="material-icons" style="font-size: 16px;font-weight: bold;">close</span></i></a>
+  <div class="row">
+  <img class="alert-icon" style="padding: 0 10px 0 10px;" src="assets/img/payment_plan.svg" alt="icon" data-src="assets/img/payment_plan.svg">
+    <p class="m-0" style="padding: 0 10px 0 10px;"><strong>Not ready to pay your entire bill now?<br></strong>We offer payment plans so you can spread your payments over multiple installments. <a href="paymentplan.html" title="Payment Plan" class="text-complete">Setup a Payment Plan</a></p>
+    </div>
+
+  </div>
+
+<!--DASHBOARD START-->
+<div class="row">
+
+<!--DASHBOARD START LEFT-->
+    <div class="col-md-7 card-p-15 p-r-10 m-b-40 card-m-0">
+
+        <!--MY DASHBOARD-->
+        <div class="card card-blue" style="margin-bottom: 20px;">
+            <div class="card-body">
+				<div class="row">
+
+					<div class="acct-res col-sm-6 col-md-6">
+					<!--HEADER-->
+						<h4 class="card-title text-white" style="margin-bottom:5px !important;">My Dashboard</h4>
+						<!--ACCOUNT NUMBER-->
+						<div class="p-l-0 d-flex">
+							<p class="card-text text-white"><span class="material-icons-outlined menu-icon sm-icon">account_circle</span><span class="res-hide">Account Number:</span></p><p class="card-text-bold text-white">000000</p>
+						</div>
+					</div>
+                    <div class="acct-res col-sm-6 col-md-6 text-right">
+					<!--HEADER-->
+						<p class="card-text-bold text-white" style="margin-bottom:5px !important;">Account Balance</p>
+						<!--BALANCE-->
+                        <h4 class="card-title text-white">$35,000.00</h4>
+					</div>
+				</div>
+            </div>
+        </div>
+
+        <!--OPEN INVOICE-->
+        <div class="card">
+            <div class="card-body">
+
+				<div class="row m-b-20">
+					<div class="col-sm-6 col-md-6 w-50">
+					<!--HEADER-->
+						<h4 class="card-title">Open Invoices</h4>
+					</div>
+					<div class="col-sm-6 col-md-6 m-b-5 w-50"><a href="paymentmethod.html" class="btn btn-secondary btn-cons m-r-0 pull-right m-0">Payment Methods</a></div>                   
+				</div>
+
+                <div class="row">
+					<div class="col-sm-12 col-md-12" style="margin-bottom: 5px;">
+						<!--ACCOUNT NUMBER-->
+						<div class="p-l-0 d-flex">
+							<p class="card-text align-middle"><span class="material-icons md-icon">schedule</span>Next Scheduled Payment:</p><a href="#scheduledpayments" Xdata-toggle="scheduledpayments" title="Next Scheduled Payment" class="card-text text-complete m-l-5 align-middle">05/28/2020<span data-toggle="tooltip" title="Lorem ipsum dolor sit amet." class="material-icons-outlined menu-icon tooltip-right">info</span></a>
+						</div>
+					</div>                   
+				</div>
+
+				<div id="module" class="card-border p-t-15">
+                    <div id="collapseExample" class="accordion-body collapse col-sm-12 col-md-12 col-lg-12 table-res p-l-0 p-r-0">
+					<!--HEADER-->
+                                    <table class="table table-expand">
+                                        <thead>
+                                            <tr>
+                                                <th class=""></th>
+                                                <th class="th-sm">Date</th>
+                                                <th>Account</th>
+                                                <th class="th-lg">Statement</th>
+                                                <th class="th-lg">Balance</th>
+                                                <th class="th-xl">As of Date</th>
+                                                <th class="" style="text-align: right !important;">Amount</th>
+                                                <th class="" scope="col"></th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+
+                                        <!--ROW 1-->
+                                            <tr>
+                                                <td class="align-middle" class="width: 50px !important;">
+                                                    <div class="checkbox check-success m-0">
+                                                        <input type="checkbox" checked="checked" value="1" id="one">
+                                                        <label for="one" class="padding-0 m-0"></label>
+                                                    </div>
+                                                </td>
+                                                <td class="align-middle td-sm">03/11/2020</td>
+                                                <td class="align-middle">4567896546</td>
+                                                <td class="align-middle td-lg"><a href="#" class="text-complete p-l-5">SRB-1234567</a></td>
+                                                <td class="align-middle td-lg">$500.00</td>
+                                                <td class="align-middle td-xl">02/03/20</td>
+                                                <td class="align-middle">
+                                                    <div class="form-group m-b-0 pull-right">
+                                                        <input id="inputone"  type="text" data-a-sign="$ " placeholder="$500.00" class="currencyInput form-control" style="max-width: 100px;">
+                                                    </div>
+                                                </td>
+                                                <td class="align-middle">
+                                                    <div class="td-hide-xl m-l-10">
+                                                        <a class="accordion-toggle collapsed sub-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne"><span class="material-icons subnav-icon arrow-down">keyboard_arrow_up</span></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="hide-table-padding">
+                                                
+                                                <td colspan="4">
+                                                    <div id="collapseOne" class="collapse in p-3 td-hide-xl">
+                                                       <div class="row m-b-10 td-hide td-show-sm">
+                                                            <div class="col-6">Date:</div>
+                                                            <div class="col-6">03/11/2020</div>
+                                                        </div>
+                                                        <div class="row m-b-10 td-hide">
+                                                            <div class="col-6">Account:</div>
+                                                            <div class="col-6">4567896546</div>
+                                                        </div>
+                                                        <div class="row m-b-10 td-hide td-show-lg">
+                                                            <div class="col-6">Statement:</div>
+                                                            <div class="col-6"><a href="#" class="text-complete">SRB-1234567</a></div>
+                                                        </div>
+                                                        <div class="row m-b-10 td-hide td-show-lg">
+                                                            <div class="col-6">Balance Due:</div>
+                                                            <div class="col-6">$500.00</div>
+                                                        </div>
+                                                        <div class="row m-b-10 td-hide td-show-xl">
+                                                            <div class="col-6">As of Date:</div>
+                                                            <div class="col-6">02/03/20</div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+
+                                            <!--ROW 2-->
+                                            <tr>
+                                                <td class="align-middle" class="width: 50px !important;">
+                                                    <div class="checkbox check-success m-0">
+                                                        <input type="checkbox" checked="checked" value="1" id="two">
+                                                        <label for="two" class="padding-0 m-0"></label>
+                                                    </div>
+                                                </td>
+                                                <td class="align-middle td-sm">03/11/2020</td>
+                                                <td class="align-middle">4567896546</td>
+                                                <td class="align-middle td-lg"><a href="#" class="text-complete p-l-5">SRB-1234567</a></td>
+                                                <td class="align-middle td-lg">$500.00</td>
+                                                <td class="align-middle td-xl">02/03/20</td>
+                                                <td class="align-middle">
+                                                    <div class="form-group m-b-0 pull-right">
+                                                        <input id="inputtwo"  type="text" data-a-sign="$ " placeholder="$500.00" class="currencyInput form-control" style="max-width: 100px;">
+                                                    </div>
+                                                </td>
+                                                <td class="align-middle">
+                                                    <div class="td-hide-xl m-l-10">
+                                                        <a class="accordion-toggle collapsed sub-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo"><span class="material-icons subnav-icon arrow-down">keyboard_arrow_up</span></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="hide-table-padding">
+                                                
+                                                <td colspan="4">
+                                                    <div id="collapseTwo" class="collapse in p-3">
+                                                       <div class="row m-b-10 td-hide td-show-sm">
+                                                            <div class="col-6">Date:</div>
+                                                            <div class="col-6">03/11/2020</div>
+                                                        </div>
+                                                        <div class="row m-b-10 td-hide">
+                                                            <div class="col-6">Account:</div>
+                                                            <div class="col-6">4567896546</div>
+                                                        </div>
+                                                        <div class="row m-b-10 td-hide td-show-lg">
+                                                            <div class="col-6">Statement:</div>
+                                                            <div class="col-6"><a href="#" class="text-complete">SRB-1234567</a></div>
+                                                        </div>
+                                                        <div class="row m-b-10 td-hide td-show-lg">
+                                                            <div class="col-6">Balance Due:</div>
+                                                            <div class="col-6">$500.00</div>
+                                                        </div>
+                                                        <div class="row m-b-10 td-hide td-show-xl">
+                                                            <div class="col-6">As of Date:</div>
+                                                            <div class="col-6">02/03/20</div>
+                                                        </div>
+                                                </td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+
+                                            <!--ROW 3-->
+                                            <tr>
+                                                <td class="align-middle" class="width: 50px !important;">
+                                                    <div class="checkbox check-success m-0">
+                                                        <input type="checkbox" checked="checked" value="1" id="three">
+                                                        <label for="three" class="padding-0 m-0"></label>
+                                                    </div>
+                                                </td>
+                                                <td class="align-middle td-sm">03/11/2020</td>
+                                                <td class="align-middle">4567896546</td>
+                                                <td class="align-middle td-lg"><a href="#" class="text-complete p-l-5">SRB-1234567</a></td>
+                                                <td class="align-middle td-lg">$500.00</td>
+                                                <td class="align-middle td-xl">02/03/20</td>
+                                                <td class="align-middle">
+                                                    <div class="form-group m-b-0 pull-right">
+                                                        <input id="inputthree" type="text" data-a-sign="$ " placeholder="$500.00" class="currencyInput form-control" style="max-width: 100px;">
+                                                    </div>
+                                                </td>
+                                                <td class="align-middle">
+                                                    <div class="td-hide-xl m-l-10">
+                                                        <a class="accordion-toggle collapsed sub-toggle" data-toggle="collapse" data-parent="#accordion3" href="#collapseThree"><span class="material-icons subnav-icon arrow-down">keyboard_arrow_up</span></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="hide-table-padding">
+                                                
+                                                <td colspan="3">
+                                                    <div id="collapseThree" class="collapse in p-3">
+                                                       <div class="row m-b-10 td-hide td-show-sm">
+                                                            <div class="col-6">Date:</div>
+                                                            <div class="col-6">03/11/2020</div>
+                                                        </div>
+                                                        <div class="row m-b-10 td-hide">
+                                                            <div class="col-6">Account:</div>
+                                                            <div class="col-6">4567896546</div>
+                                                        </div>
+                                                        <div class="row m-b-10 td-hide td-show-lg">
+                                                            <div class="col-6">Statement:</div>
+                                                            <div class="col-6"><a href="#" class="text-complete">SRB-1234567</a></div>
+                                                        </div>
+                                                        <div class="row m-b-10 td-hide td-show-lg">
+                                                            <div class="col-6">Balance Due:</div>
+                                                            <div class="col-6">$500.00</div>
+                                                        </div>
+                                                        <div class="row m-b-10 td-hide td-show-xl">
+                                                            <div class="col-6">As of Date:</div>
+                                                            <div class="col-6">02/03/20</div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+
+                                            <!--ROW 4-->
+                                            <tr>
+                                                <td class="align-middle" class="width: 50px !important;">
+                                                    <div class="checkbox check-success m-0">
+                                                        <input type="checkbox" checked="checked" value="1" id="four">
+                                                        <label for="four" class="padding-0 m-0"></label>
+                                                    </div>
+                                                </td>
+                                                <td class="align-middle td-sm">03/11/2020</td>
+                                                <td class="align-middle">4567896546</td>
+                                                <td class="align-middle td-lg"><a href="#" class="text-complete p-l-5">SRB-1234567</a></td>
+                                                <td class="align-middle td-lg">$500.00</td>
+                                                <td class="align-middle td-xl">02/03/20</td>
+                                                <td class="align-middle">
+                                                    <div class="form-group m-b-0 pull-right">
+                                                        <input id="inputfour"  type="text" data-a-sign="$ " placeholder="$500.00" class="currencyInput form-control" style="max-width: 100px;">
+                                                    </div>
+                                                </td>
+                                                <td class="align-middle">
+                                                    <div class="td-hide-xl m-l-10">
+                                                        <a class="accordion-toggle collapsed sub-toggle" data-toggle="collapse" data-parent="#accordion4" href="#collapseFour"><span class="material-icons subnav-icon arrow-down">keyboard_arrow_up</span></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="hide-table-padding">
+                                                
+                                                <td colspan="4">
+                                                    <div id="collapseFour" class="collapse in p-3 td-hide-xl">
+                                                       <div class="row m-b-10 td-hide td-show-sm">
+                                                            <div class="col-6">Date:</div>
+                                                            <div class="col-6">03/11/2020</div>
+                                                        </div>
+                                                        <div class="row m-b-10 td-hide">
+                                                            <div class="col-6">Account:</div>
+                                                            <div class="col-6">4567896546</div>
+                                                        </div>
+                                                        <div class="row m-b-10 td-hide td-show-lg">
+                                                            <div class="col-6">Statement:</div>
+                                                            <div class="col-6"><a href="#" class="text-complete">SRB-1234567</a></div>
+                                                        </div>
+                                                        <div class="row m-b-10 td-hide td-show-lg">
+                                                            <div class="col-6">Balance Due:</div>
+                                                            <div class="col-6">$500.00</div>
+                                                        </div>
+                                                        <div class="row m-b-10 td-hide td-show-xl">
+                                                            <div class="col-6">As of Date:</div>
+                                                            <div class="col-6">02/03/20</div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+
+                                            <!--ROW 5-->
+                                            <tr>
+                                                <td class="align-middle" class="width: 50px !important;">
+                                                    <div class="checkbox check-success m-0">
+                                                        <input type="checkbox" checked="checked" value="1" id="five">
+                                                        <label for="five" class="padding-0 m-0"></label>
+                                                    </div>
+                                                </td>
+                                                <td class="align-middle td-sm">03/11/2020</td>
+                                                <td class="align-middle">4567896546</td>
+                                                <td class="align-middle td-lg"><a href="#" class="text-complete p-l-5">SRB-1234567</a></td>
+                                                <td class="align-middle td-lg">$500.00</td>
+                                                <td class="align-middle td-xl">02/03/20</td>
+                                                <td class="align-middle">
+                                                    <div class="form-group m-b-0 pull-right">
+                                                        <input id="inputfive"  type="text" data-a-sign="$ " placeholder="$500.00" class="currencyInput form-control" style="max-width: 100px;">
+                                                    </div>
+                                                </td>
+                                                <td class="align-middle">
+                                                    <div class="td-hide-xl m-l-10">
+                                                        <a class="accordion-toggle collapsed sub-toggle" data-toggle="collapse" data-parent="#accordion5" href="#collapseFive"><span class="material-icons subnav-icon arrow-down">keyboard_arrow_up</span></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="hide-table-padding">
+                                                
+                                                <td colspan="4">
+                                                    <div id="collapseFive" class="collapse in p-3">
+                                                       <div class="row m-b-10 td-hide td-show-sm">
+                                                            <div class="col-6">Date:</div>
+                                                            <div class="col-6">03/11/2020</div>
+                                                        </div>
+                                                        <div class="row m-b-10 td-hide">
+                                                            <div class="col-6">Account:</div>
+                                                            <div class="col-6">4567896546</div>
+                                                        </div>
+                                                        <div class="row m-b-10 td-hide td-show-lg">
+                                                            <div class="col-6">Statement:</div>
+                                                            <div class="col-6"><a href="#" class="text-complete">SRB-1234567</a></div>
+                                                        </div>
+                                                        <div class="row m-b-10 td-hide td-show-lg">
+                                                            <div class="col-6">Balance Due:</div>
+                                                            <div class="col-6">$500.00</div>
+                                                        </div>
+                                                        <div class="row m-b-10 td-hide td-show-xl">
+                                                            <div class="col-6">As of Date:</div>
+                                                            <div class="col-6">02/03/20</div>
+                                                        </div>
+                                                </td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+
+                                            <!--ROW 6-->
+                                            <tr>
+                                                <td class="align-middle" class="width: 50px !important;">
+                                                    <div class="checkbox check-success m-0">
+                                                        <input type="checkbox" checked="checked" value="1" id="six">
+                                                        <label for="six" class="padding-0 m-0"></label>
+                                                    </div>
+                                                </td>
+                                                <td class="align-middle td-sm">03/11/2020</td>
+                                                <td class="align-middle">4567896546</td>
+                                                <td class="align-middle td-lg"><a href="#" class="text-complete p-l-5">SRB-1234567</a></td>
+                                                <td class="align-middle td-lg">$500.00</td>
+                                                <td class="align-middle td-xl">02/03/20</td>
+                                                <td class="align-middle">
+                                                    <div class="form-group m-b-0 pull-right">
+                                                        <input id="inputsix" type="text" data-a-sign="$ " placeholder="$500.00" class="currencyInput form-control" style="max-width: 100px;">
+                                                    </div>
+                                                </td>
+                                                <td class="align-middle">
+                                                    <div class="td-hide-xl m-l-10">
+                                                        <a class="accordion-toggle collapsed sub-toggle" data-toggle="collapse" data-parent="#accordion6" href="#collapseSix"><span class="material-icons subnav-icon arrow-down">keyboard_arrow_up</span></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="hide-table-padding">
+                                                
+                                                <td colspan="4">
+                                                    <div id="collapseSix" class="collapse in p-3">
+                                                       <div class="row m-b-10 td-hide td-show-sm">
+                                                            <div class="col-6">Date:</div>
+                                                            <div class="col-6">03/11/2020</div>
+                                                        </div>
+                                                        <div class="row m-b-10 td-hide">
+                                                            <div class="col-6">Account:</div>
+                                                            <div class="col-6">4567896546</div>
+                                                        </div>
+                                                        <div class="row m-b-10 td-hide td-show-lg">
+                                                            <div class="col-6">Statement:</div>
+                                                            <div class="col-6"><a href="#" class="text-complete">SRB-1234567</a></div>
+                                                        </div>
+                                                        <div class="row m-b-10 td-hide td-show-lg">
+                                                            <div class="col-6">Balance Due:</div>
+                                                            <div class="col-6">$500.00</div>
+                                                        </div>
+                                                        <div class="row m-b-10 td-hide td-show-xl">
+                                                            <div class="col-6">As of Date:</div>
+                                                            <div class="col-6">02/03/20</div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+
+					</div>
+
+                    
+				</div>
+
+				<div class="row" style="padding: 27px 15px 0px 15px;">
+				<div class="col-sm-12 col-md-12"><button href="#collapseExample" class="btn btn-default btn-cons w-100 see-more button-text" data-toggle="collapse">3 of 6</button></div>
+				</div>
+
+            </div>
+        </div>
+
+    </div>
+    <!--DASHBOARD END LEFT-->
+
+    <!--DASHBOARD RIGHT START-->
+    <div class="col-md-5 card-p-15 p-l-10 m-b-30">
+
+        <!--ACCOUNT DETAILS-->
+        <div class="card" style="margin-bottom: 20px;">
+            <div class="card-body">
+				<div class="row">
+
+					<div class="col-md-6 p-b-15 w-50">
+					<!--HEADER-->
+						<h4 class="card-title">John Robertson</h4>
+						<!--ACCOUNT NUMBER-->
+						<div class="p-l-0 d-flex">
+							<a href="customerprofile.html" class="card-text text-complete">Edit Account</a>
+						</div>
+					</div>
+
+                    <div class="col-md-6 w-50">
+                    <a data-toggle="modal" data-target="#linkaccounts" title="Link Accounts" class="btn btn-default btn-cons m-r-0 pull-right m-0">Link Accounts</a>
+                    </div>
+				</div>
+
+				<div class="row card-border p-t-20">
+                    <div class="col-sm-3 col-md-3 text-center" style="width: 25%;">
+                        <!--HEADER-->
+                            <a href="#paymenthistory" Xdata-toggle="tab" title="Payment History" style="cursor: pointer;"><img src="assets/img/history.svg" alt="icon" data-src="assets/img/history.svg"></a>
+                            <p class="card-text m-t-5" style="text-transform: uppercase;font-size: 10px; line-height: 14px;">Payment<br>History</p>
+                        </div>
+    
+                        <div class="col-sm-3 col-md-3 text-center" style="width: 25%;">
+                        <!--HEADER-->
+                            <a href="#cdh" Xdata-toggle="pastbills" title="Document History" style="cursor: pointer;"><img src="assets/img/cdh.svg" alt="icon" data-src="assets/img/cdh.svg"></a>
+                            <p class="card-text m-t-5" style="text-transform: uppercase;font-size: 10px; line-height: 14px;">Document<br>History</p>
+                        </div>
+    
+                        <div class="col-sm-3 col-md-3 text-center" style="width: 25%;">
+                        <!--HEADER-->
+                            <a href="paymentplan.html" title="Payment Plan"><img src="assets/img/payment_plan.svg" alt="icon" data-src="assets/img/payment_plan.svg"></a>
+                            <p class="card-text m-t-5" style="text-transform: uppercase;font-size: 10px; line-height: 14px;">Payment<br>Plan</p>
+                        </div>
+    
+                        <div class="col-sm-3 col-md-3 text-center" style="width: 25%;">
+                        <!--HEADER-->
+                            <a href="recurringpayment.html" title="Recurring Payment"><img src="assets/img/recurring_payment.svg" alt="icon" data-src="assets/img/recurring_payment.svg"></a>
+                            <p class="card-text m-t-5" style="text-transform: uppercase;font-size: 10px; line-height: 14px;">Recurring<br>Payment</p>
+                        </div>
+				</div>
+
+            </div>
+        </div>
+
+        <!--AUTOPAY-->
+        <div class="card" style="margin-bottom: 20px;">
+            <div class="card-body">
+
+                <div class="row">
+
+                    <div class="col-sm-8 col-md-8 col-lg-8 w-75">
+                    <!--HEADER-->
+                        <h4 class="card-title">AutoPay: <span id="autopaytoggle">OFF</span><span data-toggle="tooltip" title="Lorem ipsum dolor sit amet." class="material-icons-outlined menu-icon tooltip-right">info</span></h4>
+                        <a href="#" data-toggle="modal" data-target="#autopayon" class="card-text text-complete">Edit</a>
+                    </div>
+
+                    <div class="col-sm-4 col-md-4 col-lg-4 w-25">
+                    <!--TIGGLE-->
+                        <label class="switch pull-right">
+                        <input class="status" id="autopay" type="checkbox" onclick="autoPay()">
+                        <span class="slider round"></span>
+                        </label>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!--PAY ANYTIME-->
+        <div class="card" style="margin-bottom: 20px;">
+            <div class="card-body">
+
+                <div class="row">
+
+                    <div class="col-sm-4 col-md-4 col-lg-4 w-25 text-center">
+                    <!--ICON-->
+                    <img src="assets/img/pay_anytime.svg" class="pay-anytime" alt="icon" data-src="assets/img/pay_anytime.svg">
+                    </div>
+
+                    <div class="col-sm-8 col-md-8 col-lg-8 w-75">
+                    <!--COPY-->
+                    <h4 class="card-title">Pay Anytime</h4>
+                    <p>Can't find your invoice? You can still make <br>a payment. <a href="pay-anytime.html" class="card-text text-complete">Click Here</a></p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+                <!--NEXT-->
+                <div class="card pay-padding" style="margin-bottom: 0px;">
+                    <div class="card-body p-b-0 p-r-15 card-p-15" style="padding-top:0px !important;">
+                        <div class="row">
+        
+                            <div class="col-sm-6 col-md-6 p-t-15 p-b-15">
+                                <!--HEADER-->
+                                <p class="card-text text-center">Amount being paid:</p>
+                                <h4 class="card-title text-center total-amt">$10,000.00</h4>
+                            </div>
+        
+                            <div class="col-sm-6 col-md-6 p-0">
+                            <!--HEADER-->
+                                <a href="checkout.html" class="btn btn-primary btn-next"  role="button">Proceed to Pay</a>
+                            </div>
+        
+                        </div>
+                    </div>
+                </div>
+
+    </div>
+    <!--DASHBOARD RIGHT START-->
+
+</div>
+<!--DASHBOARD END-->
+
+<!--TAB CARD-->
+  <div class="card-deck m-b-40">
+    <div class="card card-default m-t-30" style="border:0px;">
+
+      <div class="card" style="border-top-left-radius: 0px !important;border-top-right-radius: 0px !important;">
+
+		<ul class="nav nav-tabs tab-sm" id="myTab" role="tablist" style="background-color: #E5E4E4; height: 86px;">
+			<li class="nav-item" style="width:100%;">
+				<a class="nav-link active text-center" id="scheduledpayments-tab" data-toggle="tab" href="#scheduledpayments" role="tab" aria-controls="scheduledpayments"
+				aria-selected="false"><span class="material-icons">schedule</span><span class="res-hide"><br>Scheduled Payments<br>Payment Plans</span></a>
+			</li>
+			<li class="nav-item" style="width:100%;">
+				<a class="nav-link text-center" id="history-tab" data-toggle="tab" href="#paymenthistory" role="tab" aria-controls="paymenthistory"
+				aria-selected="false"><span class="material-icons">history</span><span class="res-hide"><br>Payment<br>History</span></a>
+			</li>
+			<li class="nav-item" style="width:100%;">
+				<a class="nav-link text-center" style="border-right: transparent;" id="cdh-tab" data-toggle="tab" href="#cdh" role="tab" aria-controls="correspondence"
+				aria-selected="false"><span class="material-icons">mode_comment</span><span class="res-hide"><br>Correspondence<br>Document History</span></a>
+			</li>
+		</ul>
+
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="scheduledpayments" role="tabpanel" aria-labelledby="scheduledpayments-tab">
+
+                        <!--SCHEDULED PAYMENTS START-->
+                        <div class="row">
+                            <div class="col-md-12 col-lg-12 offset-lg-1">
+                                <div class="card card-default border-0 mb-0">
+
+                                    <div class="card-header d-flex justify-content-between align-items-center p-l-0 p-r-0">
+                                        <div class="card-title">Scheduled Payment</div>
+                                    </div>
+
+                                        <div class="table-responsive border-0">
+                                            <div class="no-footer" id="DataTables_Table_0_wrapper">
+                                                <div class="dt-buttons">
+                                                    <button aria-controls="DataTables_Table_1" class="dt-button buttons-excel buttons-html5" tabindex="0"><span>Excel</span></button>
+                                                </div>
+
+                                                <div class="dataTables_filter" id="DataTables_Table_1_filter">
+                                                    <label>Search:<input aria-controls="DataTables_Table_1" class="" placeholder="" type="search"></label>
+                                                </div>
+
+                                                <div class="no-footer" id="DataTables_Table_1_wrapper">
+                                                    <table class="table table-expand">
+                                                        <thead>
+                                                            <tr role="row">
+                                                                <th >Payment Date</th>
+                                                                <th class="th-sm">Reference Number</th>
+                                                                <th class="th-md">Amount Due (Installments)</th>
+                                                                <th class="th-md" style="text-align: center !important;">Payment Method</th>
+                                                                <th class="" ></th>
+                                                                <th class="" scope="col"></th>
+                                                            </tr>
+                                                        </thead>
+
+                                                        <tbody>
+                                                            <!--ROW 1-->
+                                                            <tr>
+                                                                <td class="v-align-middle" style="padding-left:18px !important;">3/11/2020</td>
+                                                                <td class="v-align-middle th-sm"><a href="#" class="text-complete">QA1234567890123</a></td>
+                                                                <td class="v-align-middle th-md"><a href="#" class="text-complete">$2.99 (1 of 1)</a></td>
+                                                                <td class="v-align-middle th-md"><img alt="logo" data-src="assets/img/visa.png" src="assets/img/visa.png" style="margin:5px;"> ***5454</td>
+                                                                <td class="v-align-middle">
+                                                                    <button class="btn btn-danger btn-cons mr-0 pull-right" data-target="#" data-toggle="modal" style="min-width:105px !important;" type="submit">Cancel</button>
+                                                                </td>
+                                                                <td class="v-align-middle">
+                                                                    <div class="td-hide-md m-l-10">
+                                                                        <a class="accordion-toggle collapsed sub-toggle" data-parent="#accordion7" data-toggle="collapse" href="#collapseSeven">
+                                                                            <span class="material-icons subnav-icon arrow-down">keyboard_arrow_up</span>
+                                                                        </a>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr class="hide-table-padding">
+                                                                <td colspan="4">
+                                                                    <div class="collapse in p-3 td-hide-xl" id="collapseSeven">
+                                                                        <div class="row m-b-10 td-hide td-show-sm">
+                                                                            <div class="col-6">Reference Number:</div>
+                                                                            <div class="col-6"><a href="#" class="text-complete">QA1234567890123</a></div>
+                                                                        </div>
+
+                                                                        <div class="row m-b-10 td-hide td-show-md">
+                                                                            <div class="col-6">Amount Due (Installments):</div>
+                                                                            <div class="col-6"><a href="#" class="text-complete">$2.99 (1 of 1)</a></div>
+                                                                        </div>
+
+                                                                        <div class="row m-b-10 td-hide td-show-md">
+                                                                            <div class="col-6">Payment Method:</div>
+                                                                            <div class="col-6"><img style="margin:5px;" alt="logo" data-src="assets/img/visa.png" src="assets/img/visa.png"></div>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+
+                                                            <!--ROW 2-->
+                                                            <tr>
+                                                                <td class="v-align-middle" style="padding-left:18px !important;">3/11/2020</td>
+                                                                <td class="v-align-middle th-sm"><a href="#" class="text-complete">QA1234567890123</a></td>
+                                                                <td class="v-align-middle th-md"><a href="#" class="text-complete">$2.99 (1 of 1)</a></td>
+                                                                <td class="v-align-middle th-md"><img alt="logo" data-src="assets/img/visa.png" src="assets/img/visa.png" style="margin:5px;"> ***5454</td>
+                                                                <td class="v-align-middle">
+                                                                    <button class="btn btn-danger btn-cons mr-0 pull-right" data-target="#" data-toggle="modal" style="min-width:105px !important;" type="submit">Cancel</button>
+                                                                </td>
+                                                                <td class="v-align-middle">
+                                                                    <div class="td-hide-md m-l-10">
+                                                                        <a class="accordion-toggle collapsed sub-toggle" data-parent="#accordion8" data-toggle="collapse" href="#collapseEight">
+                                                                            <span class="material-icons subnav-icon arrow-down">keyboard_arrow_up</span>
+                                                                        </a>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr class="hide-table-padding">
+                                                                <td colspan="4">
+                                                                    <div class="collapse in p-3 td-hide-xl" id="collapseEight">
+                                                                        <div class="row m-b-10 td-hide td-show-sm">
+                                                                            <div class="col-6">Reference Number:</div>
+                                                                            <div class="col-6"><a href="#" class="text-complete ">QA1234567890123</a></div>
+                                                                        </div>
+
+                                                                        <div class="row m-b-10 td-hide td-show-md">
+                                                                            <div class="col-6">Amount Due (Installments):</div>
+                                                                            <div class="col-6"><a href="#" class="text-complete">$2.99 (1 of 1)</a></div>
+                                                                        </div>
+
+                                                                        <div class="row m-b-10 td-hide td-show-md">
+                                                                            <div class="col-6">Payment Method:</div>
+                                                                            <div class="col-6"><img style="margin:5px;" alt="logo" data-src="assets/img/visa.png" src="assets/img/visa.png"></div>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+
+                                                            <!--ROW 3-->
+                                                            <tr>
+                                                                <td class="v-align-middle" style="padding-left:18px !important;">3/11/2020</td>
+                                                                <td class="v-align-middle th-sm"><a href="#" class="text-complete">QA1234567890123</a></td>
+                                                                <td class="v-align-middle th-md"><a href="#" class="text-complete">$2.99 (1 of 1)</a></td>
+                                                                <td class="v-align-middle th-md"><img alt="logo" data-src="assets/img/visa.png" src="assets/img/visa.png" style="margin:5px;"> ***5454</td>
+                                                                <td class="v-align-middle">
+                                                                    <button class="btn btn-danger btn-cons mr-0 pull-right" data-target="#" data-toggle="modal" style="min-width:105px !important;" type="submit">Cancel</button>
+                                                                </td>
+                                                                <td class="v-align-middle">
+                                                                    <div class="td-hide-md m-l-10">
+                                                                        <a class="accordion-toggle collapsed sub-toggle" data-parent="#accordion9" data-toggle="collapse" href="#collapseNine">
+                                                                            <span class="material-icons subnav-icon arrow-down">keyboard_arrow_up</span>
+                                                                        </a>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr class="hide-table-padding">
+                                                                <td colspan="4">
+                                                                    <div class="collapse in p-3 td-hide-xl" id="collapseNine">
+                                                                        <div class="row m-b-10 td-hide td-show-sm">
+                                                                            <div class="col-6">Reference Number:</div>
+                                                                            <div class="col-6"><a href="#" class="text-complete">QA1234567890123</a></div>
+                                                                        </div>
+
+                                                                        <div class="row m-b-10 td-hide td-show-md">
+                                                                            <div class="col-6">Amount Due (Installments):</div>
+                                                                            <div class="col-6"><a href="#" class="text-complete">$2.99 (1 of 1)</a></div>
+                                                                        </div>
+
+                                                                        <div class="row m-b-10 td-hide td-show-md">
+                                                                            <div class="col-6">Payment Method:</div>
+                                                                            <div class="col-6"><img style="margin:5px;" alt="logo" data-src="assets/img/visa.png" src="assets/img/visa.png"></div>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!--SCHEDULED PAYMENTS END-->
+
+
+                        <!--PAYMENT PLAN START-->
+                        <div class="row m-t-30">
+                            <div class="col-md-12 col-lg-12 offset-lg-1">
+                                <div class="card card-default border-0 mb-0">
+                                    <div class="card-header d-flex justify-content-between align-items-center p-l-0 p-r-0">
+                                        <div class="card-title">Payment Plan</div>
+                                    </div>
+
+                                        <div class="table-responsive border-0">
+                                            <div class="no-footer" id="DataTables_Table_0_wrapper">
+                                                <div class="dt-buttons">
+                                                    <button aria-controls="DataTables_Table_1" class="dt-button buttons-excel buttons-html5" tabindex="0"><span>Excel</span></button>
+                                                </div>
+
+                                                <div class="dataTables_filter" id="DataTables_Table_1_filter">
+                                                    <label>Search:<input aria-controls="DataTables_Table_1" class="" placeholder="" type="search"></label>
+                                                </div>
+
+                                                <div class="no-footer" id="DataTables_Table_1_wrapper">
+                                                    <table class="table table-expand">
+                                                        <thead>
+                                                            <tr role="row">
+                                                                <th class="sort asc">Plan ID</th>
+                                                                <!--FOLD GROUP 1-->
+                                                                <th class="th-sm">Created Date</th>
+                                                                <th class="th-sm">First Payment</th>
+                                                                <th class="th-sm">Final Payment</th>
+                                                                <!--FOLD GROUP 2-->
+                                                                <th class="th-xl">Invoice(s)</th>
+                                                                <th class="th-xl">Plan Description</th>
+                                                                <th class="th-xl">Amount Due</th>
+                                                                <!--FOLD GROUP 3-->
+                                                                <th class="th-xl">Plan Fees</th>
+                                                                <th class="th-xl">Plan Total</th>
+                                                                <th class="th-xl">Plan Status</th>
+                                                                <!--BUTTON-->
+                                                                <th class="sorting_disabled" ></th>
+                                                                <!--ARROW-->
+                                                                <th class="sorting_disabled" scope="col"></th>
+                                                            </tr>
+                                                        </thead>
+
+                                                        <tbody>
+                                                            <!--ROW 1-->
+                                                            <tr>
+                                                                <td class="v-align-middle" style="padding-left:18px !important;">82</td>
+                                                                <!--FOLD GROUP 1-->
+                                                                <td class="v-align-middle th-sm">04/24/2020</td>
+                                                                <td class="v-align-middle th-sm">05/24/2020</td>
+                                                                <td class="v-align-middle th-sm">11/24/2020</td>
+                                                                <!--FOLD GROUP 2-->
+                                                                <td class="v-align-middle th-xl"><a href="#" class="text-complete">SM9906334565</a></td>
+                                                                <td class="v-align-middle th-xl"><a href="#" class="text-complete">4 Installments</a></td>
+                                                                <td class="v-align-middle th-xl">$500.00</td>
+                                                                <!--FOLD GROUP 3-->
+                                                                <td class="v-align-middle th-xl">$0.00</td>
+                                                                <td class="v-align-middle th-xl">$500.00</td>
+                                                                <td class="v-align-middle th-xl">Active</td>
+                                                                <!--BUTTON-->
+                                                                <td class="v-align-middle">
+                                                                    <button class="btn btn-secondary btn-cons mr-0 pull-right" data-target="#" data-toggle="modal" style="min-width:105px !important;" type="submit">View/Edit</button>
+                                                                </td>
+                                                                <!--ARROW-->
+                                                                <td class="v-align-middle">
+                                                                    <div class="td-hide-xl m-l-10">
+                                                                        <a class="accordion-toggle collapsed sub-toggle" data-parent="#accordion10" data-toggle="collapse" href="#collapseTen">
+                                                                            <span class="material-icons subnav-icon arrow-down">keyboard_arrow_up</span>
+                                                                        </a>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr class="hide-table-padding">
+                                                                <td colspan="4">
+                                                                    <div class="collapse in p-3 td-hide-xl" id="collapseTen">
+                                                                        <!--FOLD GROUP 1-->
+                                                                        <div class="row m-b-10 td-hide td-show-sm">
+                                                                            <div class="col-6">Created Date:</div>
+                                                                            <div class="col-6">04/24/2020</div>
+                                                                        </div>
+                                                                        <div class="row m-b-10 td-hide td-show-sm">
+                                                                            <div class="col-6">First Payment:</div>
+                                                                            <div class="col-6">05/24/2020</div>
+                                                                        </div>
+                                                                        <div class="row m-b-10 td-hide td-show-sm">
+                                                                            <div class="col-6">Final Payment:</div>
+                                                                            <div class="col-6">11/24/2020</div>
+                                                                        </div>
+
+                                                                        <!--FOLD GROUP 2-->
+                                                                        <div class="row m-b-10 td-hide td-show-xl">
+                                                                            <div class="col-6">Invoice(s):</div>
+                                                                            <div class="col-6"><a href="#" class="text-complete">SM9906334565</a></div>
+                                                                        </div>
+                                                                        <div class="row m-b-10 td-hide td-show-xl">
+                                                                            <div class="col-6">Plan Description:</div>
+                                                                            <div class="col-6"><a href="#" class="text-complete">4 Installments</a></div>
+                                                                        </div>
+                                                                        <div class="row m-b-10 td-hide td-show-xl">
+                                                                            <div class="col-6">Amount Due:</div>
+                                                                            <div class="col-6">$500.00</div>
+                                                                        </div>
+
+                                                                        <!--FOLD GROUP 3-->
+                                                                        <div class="row m-b-10 td-hide td-show-xl">
+                                                                            <div class="col-6">Plan Fees:</div>
+                                                                            <div class="col-6">$0.00</div>
+                                                                        </div>
+                                                                        <div class="row m-b-10 td-hide td-show-xl">
+                                                                            <div class="col-6">Plan Total:</div>
+                                                                            <div class="col-6">$500.00</div>
+                                                                        </div>
+                                                                        <div class="row m-b-10 td-hide td-show-xl">
+                                                                            <div class="col-6">Plan Status:</div>
+                                                                            <div class="col-6">Active</div>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+
+                                                            <!--ROW 2-->
+                                                            <tr>
+                                                                <td class="v-align-middle" style="padding-left:18px !important;">82</td>
+                                                                <!--FOLD GROUP 1-->
+                                                                <td class="v-align-middle th-sm">04/24/2020</td>
+                                                                <td class="v-align-middle th-sm">05/24/2020</td>
+                                                                <td class="v-align-middle th-sm">11/24/2020</td>
+                                                                <!--FOLD GROUP 2-->
+                                                                <td class="v-align-middle th-xl"><a href="#" class="text-complete">SM9906334565</a></td>
+                                                                <td class="v-align-middle th-xl"><a href="#" class="text-complete">4 Installments</a></td>
+                                                                <td class="v-align-middle th-xl">$500.00</td>
+                                                                <!--FOLD GROUP 3-->
+                                                                <td class="v-align-middle th-xl">$0.00</td>
+                                                                <td class="v-align-middle th-xl">$500.00</td>
+                                                                <td class="v-align-middle th-xl">Deactivated</td>
+                                                                <!--BUTTON-->
+                                                                <td class="v-align-middle">
+                                                                    <button class="btn btn-default btn-cons mr-0 pull-right" data-target="#" data-toggle="modal" style="min-width:105px !important;" type="submit">View</button>
+                                                                </td>
+                                                                <!--ARROW-->
+                                                                <td class="v-align-middle">
+                                                                    <div class="td-hide-xl m-l-10">
+                                                                        <a class="accordion-toggle collapsed sub-toggle" data-parent="#accordion11" data-toggle="collapse" href="#collapseEleven">
+                                                                            <span class="material-icons subnav-icon arrow-down">keyboard_arrow_up</span>
+                                                                        </a>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr class="hide-table-padding">
+                                                                <td colspan="4">
+                                                                    <div class="collapse in p-3 td-hide-xl" id="collapseEleven">
+                                                                        <!--FOLD GROUP 1-->
+                                                                        <div class="row m-b-10 td-hide td-show-sm">
+                                                                            <div class="col-6">Created Date:</div>
+                                                                            <div class="col-6">04/24/2020</div>
+                                                                        </div>
+                                                                        <div class="row m-b-10 td-hide td-show-sm">
+                                                                            <div class="col-6">First Payment:</div>
+                                                                            <div class="col-6">05/24/2020</div>
+                                                                        </div>
+                                                                        <div class="row m-b-10 td-hide td-show-sm">
+                                                                            <div class="col-6">Final Payment:</div>
+                                                                            <div class="col-6">11/24/2020</div>
+                                                                        </div>
+
+                                                                        <!--FOLD GROUP 2-->
+                                                                        <div class="row m-b-10 td-hide td-show-xl">
+                                                                            <div class="col-6">Invoice(s):</div>
+                                                                            <div class="col-6"><a href="#" class="text-complete">SM9906334565</a></div>
+                                                                        </div>
+                                                                        <div class="row m-b-10 td-hide td-show-xl">
+                                                                            <div class="col-6">Plan Description:</div>
+                                                                            <div class="col-6"><a href="#" class="text-complete">4 Installments</a></div>
+                                                                        </div>
+                                                                        <div class="row m-b-10 td-hide td-show-xl">
+                                                                            <div class="col-6">Amount Due:</div>
+                                                                            <div class="col-6">$500.00</div>
+                                                                        </div>
+
+                                                                        <!--FOLD GROUP 3-->
+                                                                        <div class="row m-b-10 td-hide td-show-xl">
+                                                                            <div class="col-6">Plan Fees:</div>
+                                                                            <div class="col-6">$0.00</div>
+                                                                        </div>
+                                                                        <div class="row m-b-10 td-hide td-show-xl">
+                                                                            <div class="col-6">Plan Total:</div>
+                                                                            <div class="col-6">$500.00</div>
+                                                                        </div>
+                                                                        <div class="row m-b-10 td-hide td-show-xl">
+                                                                            <div class="col-6">Plan Status:</div>
+                                                                            <div class="col-6">Deactivated</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+
+                                                            <!--ROW 3-->
+                                                            <tr>
+                                                                <td class="v-align-middle" style="padding-left:18px !important;">82</td>
+                                                                <!--FOLD GROUP 1-->
+                                                                <td class="v-align-middle th-sm">04/24/2020</td>
+                                                                <td class="v-align-middle th-sm">05/24/2020</td>
+                                                                <td class="v-align-middle th-sm">11/24/2020</td>
+                                                                <!--FOLD GROUP 2-->
+                                                                <td class="v-align-middle th-xl"><a href="#" class="text-complete">SM9906334565</a></td>
+                                                                <td class="v-align-middle th-xl"><a href="#" class="text-complete">4 Installments</a></td>
+                                                                <td class="v-align-middle th-xl">$500.00</td>
+                                                                <!--FOLD GROUP 3-->
+                                                                <td class="v-align-middle th-xl">$0.00</td>
+                                                                <td class="v-align-middle th-xl">$500.00</td>
+                                                                <td class="v-align-middle th-xl">Active</td>
+                                                                <!--BUTTON-->
+                                                                <td class="v-align-middle">
+                                                                    <button class="btn btn-secondary btn-cons mr-0 pull-right" data-target="#" data-toggle="modal" style="min-width:105px !important;" type="submit">View/Edit</button>
+                                                                </td>
+                                                                <!--ARROW-->
+                                                                <td class="v-align-middle">
+                                                                    <div class="td-hide-xl m-l-10">
+                                                                        <a class="accordion-toggle collapsed sub-toggle" data-parent="#accordion12" data-toggle="collapse" href="#collapseTwelve">
+                                                                            <span class="material-icons subnav-icon arrow-down">keyboard_arrow_up</span>
+                                                                        </a>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr class="hide-table-padding">
+                                                                <td colspan="4">
+                                                                    <div class="collapse in p-3 td-hide-xl" id="collapseTwelve">
+                                                                        <!--FOLD GROUP 1-->
+                                                                        <div class="row m-b-10 td-hide td-show-sm">
+                                                                            <div class="col-6">Created Date:</div>
+                                                                            <div class="col-6">04/24/2020</div>
+                                                                        </div>
+                                                                        <div class="row m-b-10 td-hide td-show-sm">
+                                                                            <div class="col-6">First Payment:</div>
+                                                                            <div class="col-6">05/24/2020</div>
+                                                                        </div>
+                                                                        <div class="row m-b-10 td-hide td-show-sm">
+                                                                            <div class="col-6">Final Payment:</div>
+                                                                            <div class="col-6">11/24/2020</div>
+                                                                        </div>
+
+                                                                        <!--FOLD GROUP 2-->
+                                                                        <div class="row m-b-10 td-hide td-show-xl">
+                                                                            <div class="col-6">Invoice(s):</div>
+                                                                            <div class="col-6"><a href="#" class="text-complete">SM9906334565</a></div>
+                                                                        </div>
+                                                                        <div class="row m-b-10 td-hide td-show-xl">
+                                                                            <div class="col-6">Plan Description:</div>
+                                                                            <div class="col-6"><a href="#" class="text-complete">4 Installments</a></div>
+                                                                        </div>
+                                                                        <div class="row m-b-10 td-hide td-show-xl">
+                                                                            <div class="col-6">Amount Due:</div>
+                                                                            <div class="col-6">$500.00</div>
+                                                                        </div>
+
+                                                                        <!--FOLD GROUP 3-->
+                                                                        <div class="row m-b-10 td-hide td-show-xl">
+                                                                            <div class="col-6">Plan Fees:</div>
+                                                                            <div class="col-6">$0.00</div>
+                                                                        </div>
+                                                                        <div class="row m-b-10 td-hide td-show-xl">
+                                                                            <div class="col-6">Plan Total:</div>
+                                                                            <div class="col-6">$500.00</div>
+                                                                        </div>
+                                                                        <div class="row m-b-10 td-hide td-show-xl">
+                                                                            <div class="col-6">Plan Status:</div>
+                                                                            <div class="col-6">Active</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--PAYMENT PLAN END-->
+
+                </div>
+
+                <div class="tab-pane fade" id="paymenthistory" role="tabpanel" aria-labelledby="history-tab">
+
+                        <!--PAYMENT HISTORY-->
+                        <div class="row m-t-30">
+                            <div class="col-md-12 col-lg-12 offset-lg-1">
+                                <div class="card card-default border-0 mb-0">
+
+                                        <div class="table-responsive border-0">
+                                            <div class="no-footer" id="DataTables_Table_0_wrapper">
+
+                                                <div class="dataTables_filter" id="DataTables_Table_1_filter">
+                                                    <label>Search:<input aria-controls="DataTables_Table_1" class="" placeholder="" type="search"></label>
+                                                </div>
+
+                                                <div class="no-footer" id="DataTables_Table_1_wrapper">
+                                                    <table class="table table-expand">
+                                                        <thead>
+                                                            <tr role="row">
+                                                                <th class="sort">Payment Date</th>
+                                                                <!--FOLD GROUP 1-->
+                                                                <th class="th-sm">Ref Number</th>
+                                                                <th class="th-sm">Trans. ID</th>
+                                                                <th class="th-sm">Amount (Installments)</th>
+                                                                <!--FOLD GROUP 2-->
+                                                                <th class="th-xl">Convenience Fee</th>
+                                                                <th class="th-xl">Plan Fee</th>
+                                                                <th class="th-xl">Discount</th>
+                                                                <!--FOLD GROUP 3-->
+                                                                <th class="th-xl">Total Payment Amount</th>
+                                                                <th class="th-xl">Payment Mode</th>
+                                                                <th class="th-xl">Payment Method</th>
+                                                                <th class="th-xl">Status</th>
+                                                                <!--BUTTON-->
+                                                                <th></th>
+                                                                <!--ARROW-->
+                                                                <th scope="col"></th>
+                                                            </tr>
+                                                        </thead>
+
+                                                        <tbody>
+                                                            <!--ROW 1-->
+                                                            <tr>
+                                                                <td class="v-align-middle" style="padding-left:18px !important;">03/11/2020</td>
+                                                                <!--FOLD GROUP 1-->
+                                                                <td class="v-align-middle th-sm"><a href="#" class="text-complete">4016438</a></td>
+                                                                <td class="v-align-middle th-sm">0</td>
+                                                                <td class="v-align-middle th-sm">$9.00 (1 of 1)</td>
+                                                                <!--FOLD GROUP 2-->
+                                                                <td class="v-align-middle th-xl">$0.00</td>
+                                                                <td class="v-align-middle th-xl">$0.00</td>
+                                                                <td class="v-align-middle th-xl">$0.00</td>
+                                                                <!--FOLD GROUP 3-->
+                                                                <td class="v-align-middle th-xl">$0.00</td>
+                                                                <td class="v-align-middle th-xl">CSR</td>
+                                                                <td class="v-align-middle th-xl"><img alt="logo" data-src="assets/img/visa.png" src="assets/img/visa.png" style="margin:5px;"> ***5454</td>
+                                                                <td class="v-align-middle th-xl">Approved</td>
+                                                                <!--BUTTON-->
+                                                                <td class="v-align-middle">
+                                                                    <button class="btn btn-default btn-cons mr-0 pull-right" data-target="#" data-toggle="modal" style="min-width:105px !important;" type="submit">View Receipt</button>
+                                                                </td>
+                                                                <!--ARROW-->
+                                                                <td class="v-align-middle">
+                                                                    <div class="td-hide-xl m-l-10">
+                                                                        <a class="accordion-toggle collapsed sub-toggle" data-parent="#accordion13" data-toggle="collapse" href="#collapseThirteen">
+                                                                            <span class="material-icons subnav-icon arrow-down">keyboard_arrow_up</span>
+                                                                        </a>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr class="hide-table-padding">
+                                                                <td colspan="4">
+                                                                    <div class="collapse in p-3 td-hide-xl" id="collapseThirteen">
+                                                                        <!--FOLD GROUP 1-->
+                                                                        <div class="row m-b-10 td-hide td-show-sm">
+                                                                            <div class="col-6">Reference Number:</div>
+                                                                            <div class="col-6"><a href="#" class="text-complete">4016438</a></div>
+                                                                        </div>
+                                                                        <div class="row m-b-10 td-hide td-show-sm">
+                                                                            <div class="col-6">Transaction ID:</div>
+                                                                            <div class="col-6">0</div>
+                                                                        </div>
+                                                                        <div class="row m-b-10 td-hide td-show-sm">
+                                                                            <div class="col-6">Amount (Installments):</div>
+                                                                            <div class="col-6">$9.00 (1 of 1)</div>
+                                                                        </div>
+
+                                                                        <!--FOLD GROUP 2-->
+                                                                        <div class="row m-b-10 td-hide td-show-xl">
+                                                                            <div class="col-6">Convenience Fee:</div>
+                                                                            <div class="col-6">$0.00</div>
+                                                                        </div>
+                                                                        <div class="row m-b-10 td-hide td-show-xl">
+                                                                            <div class="col-6">Plan Fee:</div>
+                                                                            <div class="col-6">$0.00</div>
+                                                                        </div>
+                                                                        <div class="row m-b-10 td-hide td-show-xl">
+                                                                            <div class="col-6">Discount:</div>
+                                                                            <div class="col-6">0.00</div>
+                                                                        </div>
+
+                                                                        <!--FOLD GROUP 3-->
+                                                                        <div class="row m-b-10 td-hide td-show-xl">
+                                                                            <div class="col-6">Total Payment Amount:</div>
+                                                                            <div class="col-6">$0.00</div>
+                                                                        </div>
+                                                                        <div class="row m-b-10 td-hide td-show-xl">
+                                                                            <div class="col-6">Payment Mode:</div>
+                                                                            <div class="col-6">CSR</div>
+                                                                        </div>
+                                                                        <div class="row m-b-10 td-hide td-show-xl">
+                                                                            <div class="col-6">Payment Method:</div>
+                                                                            <div class="col-6"><img alt="logo" data-src="assets/img/visa.png" src="assets/img/visa.png" style="margin:5px;"> ***5454</div>
+                                                                        </div>
+                                                                        <div class="row m-b-10 td-hide td-show-xl">
+                                                                            <div class="col-6">Status:</div>
+                                                                            <div class="col-6">Approved</div>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+
+                                                            <!--ROW 2-->
+                                                            <tr>
+                                                                <td class="v-align-middle" style="padding-left:18px !important;">03/11/2020</td>
+                                                                <!--FOLD GROUP 1-->
+                                                                <td class="v-align-middle th-sm"><a href="#" class="text-complete">4016438</a></td>
+                                                                <td class="v-align-middle th-sm">0</td>
+                                                                <td class="v-align-middle th-sm">$9.00 (1 of 1)</td>
+                                                                <!--FOLD GROUP 2-->
+                                                                <td class="v-align-middle th-xl">$0.00</td>
+                                                                <td class="v-align-middle th-xl">$0.00</td>
+                                                                <td class="v-align-middle th-xl">$0.00</td>
+                                                                <!--FOLD GROUP 3-->
+                                                                <td class="v-align-middle th-xl">$0.00</td>
+                                                                <td class="v-align-middle th-xl">CSR</td>
+                                                                <td class="v-align-middle th-xl"><img alt="logo" data-src="assets/img/visa.png" src="assets/img/visa.png" style="margin:5px;"> ***5454</td>
+                                                                <td class="v-align-middle th-xl" style="color: #f00;">Declined</td>
+                                                                <!--BUTTON-->
+                                                                <td class="v-align-middle">
+                                                                    <button class="btn btn-default btn-cons mr-0 pull-right" data-target="#" data-toggle="modal" style="min-width:105px !important;" type="submit">View Receipt</button>
+                                                                </td>
+                                                                <!--ARROW-->
+                                                                <td class="v-align-middle">
+                                                                    <div class="td-hide-xl m-l-10">
+                                                                        <a class="accordion-toggle collapsed sub-toggle" data-parent="#accordion14" data-toggle="collapse" href="#collapseFourteen">
+                                                                            <span class="material-icons subnav-icon arrow-down">keyboard_arrow_up</span>
+                                                                        </a>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr class="hide-table-padding">
+                                                                <td colspan="4">
+                                                                    <div class="collapse in p-3 td-hide-xl" id="collapseFourteen">
+                                                                        <!--FOLD GROUP 1-->
+                                                                        <div class="row m-b-10 td-hide td-show-sm">
+                                                                            <div class="col-6">Reference Number:</div>
+                                                                            <div class="col-6"><a href="#" class="text-complete">4016438</a></div>
+                                                                        </div>
+                                                                        <div class="row m-b-10 td-hide td-show-sm">
+                                                                            <div class="col-6">Transaction ID:</div>
+                                                                            <div class="col-6">0</div>
+                                                                        </div>
+                                                                        <div class="row m-b-10 td-hide td-show-sm">
+                                                                            <div class="col-6">Amount (Installments):</div>
+                                                                            <div class="col-6">$9.00 (1 of 1)</div>
+                                                                        </div>
+
+                                                                        <!--FOLD GROUP 2-->
+                                                                        <div class="row m-b-10 td-hide td-show-xl">
+                                                                            <div class="col-6">Convenience Fee:</div>
+                                                                            <div class="col-6">$0.00</div>
+                                                                        </div>
+                                                                        <div class="row m-b-10 td-hide td-show-xl">
+                                                                            <div class="col-6">Plan Fee:</div>
+                                                                            <div class="col-6">$0.00</div>
+                                                                        </div>
+                                                                        <div class="row m-b-10 td-hide td-show-xl">
+                                                                            <div class="col-6">Discount:</div>
+                                                                            <div class="col-6">0.00</div>
+                                                                        </div>
+
+                                                                        <!--FOLD GROUP 3-->
+                                                                        <div class="row m-b-10 td-hide td-show-xl">
+                                                                            <div class="col-6">Total Payment Amount:</div>
+                                                                            <div class="col-6">$0.00</div>
+                                                                        </div>
+                                                                        <div class="row m-b-10 td-hide td-show-xl">
+                                                                            <div class="col-6">Payment Mode:</div>
+                                                                            <div class="col-6">CSR</div>
+                                                                        </div>
+                                                                        <div class="row m-b-10 td-hide td-show-xl">
+                                                                            <div class="col-6">Payment Method:</div>
+                                                                            <div class="col-6"><img alt="logo" data-src="assets/img/visa.png" src="assets/img/visa.png" style="margin:5px;"> ***5454</div>
+                                                                        </div>
+                                                                        <div class="row m-b-10 td-hide td-show-xl">
+                                                                            <div class="col-6">Status:</div>
+                                                                            <div class="col-6" style="color: #f00;">Denied</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+
+                                                            <!--ROW 3-->
+                                                            <tr>
+                                                                <td class="v-align-middle" style="padding-left:18px !important;">03/11/2020</td>
+                                                                <!--FOLD GROUP 1-->
+                                                                <td class="v-align-middle th-sm"><a href="#" class="text-complete">4016438</a></td>
+                                                                <td class="v-align-middle th-sm">0</td>
+                                                                <td class="v-align-middle th-sm">$9.00 (1 of 1)</td>
+                                                                <!--FOLD GROUP 2-->
+                                                                <td class="v-align-middle th-xl">$0.00</td>
+                                                                <td class="v-align-middle th-xl">$0.00</td>
+                                                                <td class="v-align-middle th-xl">$0.00</td>
+                                                                <!--FOLD GROUP 3-->
+                                                                <td class="v-align-middle th-xl">$0.00</td>
+                                                                <td class="v-align-middle th-xl">CSR</td>
+                                                                <td class="v-align-middle th-xl"><img alt="logo" data-src="assets/img/visa.png" src="assets/img/visa.png" style="margin:5px;"> ***5454</td>
+                                                                <td class="v-align-middle th-xl">Approved</td>
+                                                                <!--BUTTON-->
+                                                                <td class="v-align-middle">
+                                                                    <button class="btn btn-default btn-cons mr-0 pull-right" data-target="#" data-toggle="modal" style="min-width:105px !important;" type="submit">View Receipt</button>
+                                                                </td>
+                                                                <!--ARROW-->
+                                                                <td class="v-align-middle">
+                                                                    <div class="td-hide-xl m-l-10">
+                                                                        <a class="accordion-toggle collapsed sub-toggle" data-parent="#accordion15" data-toggle="collapse" href="#collapseFifteen">
+                                                                            <span class="material-icons subnav-icon arrow-down">keyboard_arrow_up</span>
+                                                                        </a>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr class="hide-table-padding">
+                                                                <td colspan="4">
+                                                                    <div class="collapse in p-3 td-hide-xl" id="collapseFifteen">
+                                                                        <!--FOLD GROUP 1-->
+                                                                        <div class="row m-b-10 td-hide td-show-sm">
+                                                                            <div class="col-6">Reference Number:</div>
+                                                                            <div class="col-6"><a href="#" class="text-complete">4016438</a></div>
+                                                                        </div>
+                                                                        <div class="row m-b-10 td-hide td-show-sm">
+                                                                            <div class="col-6">Transaction ID:</div>
+                                                                            <div class="col-6">0</div>
+                                                                        </div>
+                                                                        <div class="row m-b-10 td-hide td-show-sm">
+                                                                            <div class="col-6">Amount (Installments):</div>
+                                                                            <div class="col-6">$9.00 (1 of 1)</div>
+                                                                        </div>
+
+                                                                        <!--FOLD GROUP 2-->
+                                                                        <div class="row m-b-10 td-hide td-show-xl">
+                                                                            <div class="col-6">Convenience Fee:</div>
+                                                                            <div class="col-6">$0.00</div>
+                                                                        </div>
+                                                                        <div class="row m-b-10 td-hide td-show-xl">
+                                                                            <div class="col-6">Plan Fee:</div>
+                                                                            <div class="col-6">$0.00</div>
+                                                                        </div>
+                                                                        <div class="row m-b-10 td-hide td-show-xl">
+                                                                            <div class="col-6">Discount:</div>
+                                                                            <div class="col-6">0.00</div>
+                                                                        </div>
+
+                                                                        <!--FOLD GROUP 3-->
+                                                                        <div class="row m-b-10 td-hide td-show-xl">
+                                                                            <div class="col-6">Total Payment Amount:</div>
+                                                                            <div class="col-6">$0.00</div>
+                                                                        </div>
+                                                                        <div class="row m-b-10 td-hide td-show-xl">
+                                                                            <div class="col-6">Payment Mode:</div>
+                                                                            <div class="col-6">CSR</div>
+                                                                        </div>
+                                                                        <div class="row m-b-10 td-hide td-show-xl">
+                                                                            <div class="col-6">Payment Method:</div>
+                                                                            <div class="col-6"><img alt="logo" data-src="assets/img/visa.png" src="assets/img/visa.png" style="margin:5px;"> ***5454</div>
+                                                                        </div>
+                                                                        <div class="row m-b-10 td-hide td-show-xl">
+                                                                            <div class="col-6">Status:</div>
+                                                                            <div class="col-6">Approved</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--PAYMENT HISTORY-->
+                </div>
+
+                <div class="tab-pane fade" id="cdh" role="tabpanel" aria-labelledby="cdh-tab">
+                        <!--CDH-->
+                        <div class="row m-t-30">
+                            <div class="col-md-12 col-lg-12 offset-lg-1">
+                                <div class="card card-default border-0 mb-0">
+                                    <div class="card-header d-flex justify-content-between align-items-center p-l-0 p-r-0">
+                                        <div class="card-title">Payment Plan</div>
+                                    </div>
+
+                                        <div class="table-responsive border-0">
+                                            <div class="no-footer" id="DataTables_Table_0_wrapper">
+                                                <div class="dt-buttons">
+                                                    <button aria-controls="DataTables_Table_1" class="dt-button buttons-excel buttons-html5" tabindex="0"><span>Excel</span></button>
+                                                </div>
+
+                                                <div class="dataTables_filter" id="DataTables_Table_1_filter">
+                                                    <label>Search:<input aria-controls="DataTables_Table_1" class="" placeholder="" type="search"></label>
+                                                </div>
+
+                                                <div class="no-footer" id="DataTables_Table_1_wrapper">
+                                                    <table class="table table-expand">
+                                                        <thead>
+                                                            <tr role="row">
+                                                                <th class="sort">Account Number</th>
+                                                                <!--FOLD GROUP 1-->
+                                                                <th class="th-sm">Name</th>
+                                                                <th class="th-sm">Document Type</th>
+                                                                <!--FOLD GROUP 2-->
+                                                                <th class="th-xl">Document #</th>
+                                                                <th class="th-xl">Amount</th>
+                                                                <th class="th-xl">Date</th>
+                                                                <!--BUTTON-->
+                                                                <th>Due Date</th>
+                                                                <!--ARROW-->
+                                                                <th scope="col"></th>
+                                                            </tr>
+                                                        </thead>
+
+                                                        <tbody>
+                                                            <!--ROW 1-->
+                                                            <tr>
+                                                                <td class="v-align-middle" style="padding-left:18px !important;">4016437</td>
+                                                                <!--FOLD GROUP 1-->
+                                                                <td class="v-align-middle th-sm">John Robertson</td>
+                                                                <td class="v-align-middle th-sm">Statement</td>
+                                                                <!--FOLD GROUP 2-->
+                                                                <td class="v-align-middle th-xl"><a href="#" class="text-complete">QA1234567890123</a></td>
+                                                                <td class="v-align-middle th-xl">$0.00</td>
+                                                                <td class="v-align-middle th-xl">02/03/2020</td>
+
+                                                                <td class="v-align-middle">02/03/2020</td>
+
+                                                                <!--ARROW-->
+                                                                <td class="v-align-middle">
+                                                                    <div class="td-hide-xl m-l-10">
+                                                                        <a class="accordion-toggle collapsed sub-toggle" data-parent="#accordion16" data-toggle="collapse" href="#collapseSixteen">
+                                                                            <span class="material-icons subnav-icon arrow-down">keyboard_arrow_up</span>
+                                                                        </a>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr class="hide-table-padding">
+                                                                <td colspan="4">
+                                                                    <div class="collapse in p-3 td-hide-xl" id="collapseSixteen">
+                                                                        <!--FOLD GROUP 1-->
+                                                                        <div class="row m-b-10 td-hide td-show-sm">
+                                                                            <div class="col-6">Name:</div>
+                                                                            <div class="col-6">04/24/2020</div>
+                                                                        </div>
+                                                                        <div class="row m-b-10 td-hide td-show-sm">
+                                                                            <div class="col-6">Document Type:</div>
+                                                                            <div class="col-6">05/24/2020</div>
+                                                                        </div>
+
+                                                                        <!--FOLD GROUP 2-->
+                                                                        <div class="row m-b-10 td-hide td-show-xl">
+                                                                            <div class="col-6">Document Number:</div>
+                                                                            <div class="col-6"><a href="#" class="text-complete">QA1234567890123</a></div>
+                                                                        </div>
+                                                                        <div class="row m-b-10 td-hide td-show-xl">
+                                                                            <div class="col-6">Amount:</div>
+                                                                            <div class="col-6">$0.00</div>
+                                                                        </div>
+                                                                        <div class="row m-b-10 td-hide td-show-xl">
+                                                                            <div class="col-6">Date:</div>
+                                                                            <div class="col-6">02/03/2020</div>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+
+                                                            <!--ROW 2-->
+                                                            <tr>
+                                                                <td class="v-align-middle" style="padding-left:18px !important;">4016437</td>
+                                                                <!--FOLD GROUP 1-->
+                                                                <td class="v-align-middle th-sm">John Robertson</td>
+                                                                <td class="v-align-middle th-sm">Statement</td>
+                                                                <!--FOLD GROUP 2-->
+                                                                <td class="v-align-middle th-xl"><a href="#" class="text-complete">QA1234567890123</a></td>
+                                                                <td class="v-align-middle th-xl">$0.00</td>
+                                                                <td class="v-align-middle th-xl">02/03/2020</td>
+
+                                                                <td class="v-align-middle">02/03/2020</td>
+
+                                                                <!--ARROW-->
+                                                                <td class="v-align-middle">
+                                                                    <div class="td-hide-xl m-l-10">
+                                                                        <a class="accordion-toggle collapsed sub-toggle" data-parent="#accordion17" data-toggle="collapse" href="#collapseSeventeen">
+                                                                            <span class="material-icons subnav-icon arrow-down">keyboard_arrow_up</span>
+                                                                        </a>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr class="hide-table-padding">
+                                                                <td colspan="4">
+                                                                    <div class="collapse in p-3 td-hide-xl" id="collapseSeventeen">
+                                                                        <!--FOLD GROUP 1-->
+                                                                        <div class="row m-b-10 td-hide td-show-sm">
+                                                                            <div class="col-6">Name:</div>
+                                                                            <div class="col-6">04/24/2020</div>
+                                                                        </div>
+                                                                        <div class="row m-b-10 td-hide td-show-sm">
+                                                                            <div class="col-6">Document Type:</div>
+                                                                            <div class="col-6">05/24/2020</div>
+                                                                        </div>
+
+                                                                        <!--FOLD GROUP 2-->
+                                                                        <div class="row m-b-10 td-hide td-show-xl">
+                                                                            <div class="col-6">Document Number:</div>
+                                                                            <div class="col-6"><a href="#" class="text-complete">QA1234567890123</a></div>
+                                                                        </div>
+                                                                        <div class="row m-b-10 td-hide td-show-xl">
+                                                                            <div class="col-6">Amount:</div>
+                                                                            <div class="col-6">$0.00</div>
+                                                                        </div>
+                                                                        <div class="row m-b-10 td-hide td-show-xl">
+                                                                            <div class="col-6">Date:</div>
+                                                                            <div class="col-6">02/03/2020</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+
+                                                            <!--ROW 3-->
+                                                            <tr>
+                                                                <td class="v-align-middle" style="padding-left:18px !important;">4016437</td>
+                                                                <!--FOLD GROUP 1-->
+                                                                <td class="v-align-middle th-sm">John Robertson</td>
+                                                                <td class="v-align-middle th-sm">Statement</td>
+                                                                <!--FOLD GROUP 2-->
+                                                                <td class="v-align-middle th-xl"><a href="#" class="text-complete">QA1234567890123</a></td>
+                                                                <td class="v-align-middle th-xl">$0.00</td>
+                                                                <td class="v-align-middle th-xl">02/03/2020</td>
+
+                                                                <td class="v-align-middle">02/03/2020</td>
+
+                                                                <!--ARROW-->
+                                                                <td class="v-align-middle">
+                                                                    <div class="td-hide-xl m-l-10">
+                                                                        <a class="accordion-toggle collapsed sub-toggle" data-parent="#accordion18" data-toggle="collapse" href="#collapseEighteen">
+                                                                            <span class="material-icons subnav-icon arrow-down">keyboard_arrow_up</span>
+                                                                        </a>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr class="hide-table-padding">
+                                                                <td colspan="4">
+                                                                    <div class="collapse in p-3 td-hide-xl" id="collapseEighteen">
+                                                                        <!--FOLD GROUP 1-->
+                                                                        <div class="row m-b-10 td-hide td-show-sm">
+                                                                            <div class="col-6">Name:</div>
+                                                                            <div class="col-6">04/24/2020</div>
+                                                                        </div>
+                                                                        <div class="row m-b-10 td-hide td-show-sm">
+                                                                            <div class="col-6">Document Type:</div>
+                                                                            <div class="col-6">05/24/2020</div>
+                                                                        </div>
+
+                                                                        <!--FOLD GROUP 2-->
+                                                                        <div class="row m-b-10 td-hide td-show-xl">
+                                                                            <div class="col-6">Document Number:</div>
+                                                                            <div class="col-6"><a href="#" class="text-complete">QA1234567890123</a></div>
+                                                                        </div>
+                                                                        <div class="row m-b-10 td-hide td-show-xl">
+                                                                            <div class="col-6">Amount:</div>
+                                                                            <div class="col-6">$0.00</div>
+                                                                        </div>
+                                                                        <div class="row m-b-10 td-hide td-show-xl">
+                                                                            <div class="col-6">Date:</div>
+                                                                            <div class="col-6">02/03/2020</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--CDH-->
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </div>
+<!--TAB CARDS END-->
+	  
+</div>
+
+
+        <!--MODALS-->
+
+        <!--SETUP AUTOPAY-->
+        <div class="modal fade" id="setupautopay" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="modal-header p-b-30">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+						<div class="modal-body p-b-30">
+
+						<div class="col-md-12 d-flex justify-content-center">
+							<img src="assets/img/autopay.png" alt="image" data-src="assets/img/autopay.png">
+						</div>
+							
+						<div class="col-md-12 p-l-30 p-r-30">
+							<h4 class="modal-title p-t-20 text-center m-b-20" style="font-weight: 600;">AutoPay</h4>
+
+							<span>
+								Autopay is a safe, automatic and recurrent payment program 
+								that allows you to have your bill paid automatically each 
+								month from a designated bank account or credit card. You 
+								never have to worry about missing a payment. 
+							</span>
+						</div>
+
+						</div>
+
+                    <div class="modal-footer">
+                        <button type="button" data-dismiss="modal" class="btn btn-lg btn-default w-50" style="margin:5px;">Cancel</button>
+                        <button type="button" data-dismiss="modal" class="btn btn-lg btn-primary w-50" style="margin:5px;" data-toggle="modal" data-target="#autopayon">Setup AutoPay</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+		<!--AUTOPAY ON-->
+        <div class="modal fade" id="autopayon" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+
+                    <div class="modal-header p-b-20">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">AutoPay:<span class="m-l-5">ON</span></h4>
+						<p class="font-italic">Payments are automatically scheduled</p>
+                    </div>
+
+                    <div class="modal-body p-b-0">
+							<div class="row m-b-10">
+								<!--DATE PICKER-->
+								<div class="col-sm-12 col-md-8 p-b-10">
+									<div class="form-group form-group-default form-group-default-select2 required m-b-0">
+									<label>Payment Method</label>
+										<select class="full-width select2-hidden-accessible" data-placeholder="Select Country" data-init-plugin="select2" tabindex="-1" aria-hidden="true">
+											<optgroup label="Credit Card">
+												<option value="VISA">VISA ***5454</option>
+												<option value="MC">MASTER CARD ***6464</option>
+											</optgroup>
+
+											<optgroup label="Bank Account">
+												<option value="BOA">BOA(CH) ***4845</option>
+												<option value="PNC">PNC(SA) ***7845</option>
+											</optgroup>
+										</select>
+									</div>
+								</div>
+
+							<!--BUTTON-->
+							<div class="col-sm-12 col-md-4 p-b-10">
+								<a href="#" class="btn btn-lg btn-secondary w-100" role="button">Add New</a>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-md-12 p-b-10">
+								<div class="form-group form-group-default form-group-default-select2 required">
+								<label>Account Number</label>
+									<select class="full-width select2-hidden-accessible" data-placeholder="Select Country" data-init-plugin="select2" tabindex="-1" aria-hidden="true">
+											<option value="BOA">123456789ABC (ABC GAS AND ELECTRIC COMPANY)</option>
+											<option value="PNC">987654321ABC (ABC BANK)</option>								
+									</select>
+								</div>
+							</div>
+						</div>
+
+						<div class="row p-t-20 p-b-20 p-l-10 p-r-10 m-l-0 m-r-0 m-b-20 m-t-0" style="background-color:#F9F9F9;border-radius: 10px !important;">
+							<div class="col-md-6">
+								<div class="checkbox check-success">
+									<input type="checkbox" checked="checked" value="1" id="schpay">
+									<label for="schpay">Schedule Payments</label>
+								</div>
+
+								<div class="form-group form-group-default form-group-default-select2 required">
+								<label>Days after invoice date</label>
+									<select class="full-width select2-hidden-accessible" data-placeholder="Select Country" data-init-plugin="select2" tabindex="-1" aria-hidden="true">
+											<option value="number">1</option>
+											<option value="number">2</option>	
+											<option value="number">3</option>
+											<option value="number">4</option>	
+											<option value="number">5</option>
+											<option value="number">6</option>	
+											<option value="number">7</option>
+											<option value="number">8</option>						
+									</select>
+								</div>
+							</div> 
+
+							<div class="col-md-6">
+								<div class="checkbox check-success">
+									<input type="checkbox" value="1" id="maxpay">
+									<label for="maxpay">Maximum Payment Amount</label>
+								</div>
+
+								<div class="form-group form-group-default disabled" aria-required="true">
+									<label>Dollar Amount</label>
+									<input type="text" class="form-control" name="firstName" required="" aria-required="true" readonly="readonly" placeholder="$0.00">
+								</div>
+							</div>
+
+							<div class="col-md-12">
+								<p class="font-italic">
+								Maximum Autopay Amount Allowed (must not be $0.00 and this field will round to the nearest whole number)
+								<b>If not checked, no maximum will be applied.</b>
+								</p>
+							</div>
+						</div>
+
+
+                            <div class="card card-body trans-card p-t-5 p-b-5 ml-0">
+                                <div class="row p-t-20 p-b-20">
+                                    <div class="note-icon-lg col-md-1"><span class="material-icons align-middle" style="color: #00c1f3;opacity: 0.5;">info</span></div>
+                                    <div class="note-text-lg col-md-11">
+										<span>Your Autopay payment processing takes effect with your next billing cycle. 
+										If you have not paid your current balance yet, please be sure to make your payment 
+										before the due date.<br><br><b>By selecting "Update" you confirm that you have 
+										reviewed and agree to the</b><a href="#" class="text-complete p-l-5">AutoPay Terms & Conditions.</a>
+										</span>
+									</div>         
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="checkbox check-success text-right p-l-25 p-r-25 p-t-10 p-b-10">
+                        <input type="checkbox" value="1" id="applyall">
+                        <label for="applyall">Apply to All Accounts</label>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" data-dismiss="modal" class="btn btn-lg btn-default pull-right m-l-5">Cancel</button>
+                        <button id="activateBtn" type="button" data-dismiss="modal" class="btn btn-lg btn-primary pull-right apcomplete">Update</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--AUTOPAY OFF-->
+        <div class="modal fade" id="autopayoff" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="modal-header p-b-30">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+						<div class="modal-body p-b-30">
+
+						<div class="col-md-12 d-flex justify-content-center">
+							<img src="assets/img/blank_image.png" alt="image" data-src="assets/img/blank_image.png">
+						</div>
+							
+						<div class="col-md-12 p-l-30 p-r-30">
+							<h4 class="modal-title p-t-20 text-center m-b-20" style="font-weight: 600;">AutoPay</h4>
+
+							<span>
+								Autopay is a safe, automatic and recurrent payment program 
+								that allows you to have your bill paid automatically each 
+								month from a designated bank account or credit card. You 
+								never have to worry about missing a payment. 
+							</span>
+						</div>
+
+						</div>
+
+                    <div class="modal-footer">
+                        <button type="button" data-dismiss="modal" class="btn btn-lg btn-default w-50" style="margin:5px;">Cancel</button>
+                        <button  id="deactivateBtn" type="button" data-dismiss="modal" class="btn btn-lg btn-danger w-50" style="margin:5px;">Disable AutoPay</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!--AUTOPAY COMPLETE-->
+        <div class="modal fade" id="autopaycomplete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="modal-header p-b-30">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+						<div class="modal-body p-b-30">
+
+						<div class="col-md-12 d-flex justify-content-center">
+							<img src="assets/img/autocomplete" alt="image" data-src="assets/img/autocomplete.png">
+						</div>
+							
+						<div class="col-md-12 p-l-30 p-r-30">
+							<h4 class="modal-title p-t-20 text-center m-b-20" style="font-weight: 600;">AutoPay Complete</h4>
+
+							<span>
+								Autopay is a safe, automatic and recurrent payment program 
+								that allows you to have your bill paid automatically each 
+								month from a designated bank account or credit card. You 
+								never have to worry about missing a payment. 
+							</span>
+						</div>
+
+						</div>
+
+                    <div class="modal-footer d-flex justify-content-center">
+                        <button type="button" data-dismiss="modal" class="btn btn-lg btn-default w-50">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!--linkaccounts-->
+        <div class="modal fade" id="linkaccounts" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title p-b-10 text-center w-100">Link Accounts</h4>
+                            <div class="col-md-12 p-b-30">
+                            <span>Linking accounts is a great way to manage Statement <br>
+                            from multiple accounts in a centralized location. <br>
+                            <strong>Perfect for couples and families!</strong></span>
+                            </div>
+
+						</div>
+
+						<div class="modal-body p-b-10">
+
+									<!--INFO START-->
+										<form role="form" autocomplete="off" class="js--form-validation">
+										<div class="form-group m-b-20">
+
+											<div class="row">
+                                            <!--NAME-->
+                                            <div class="col-md-12 padding-5">
+                                                <div class="form-group form-group-default required" aria-required="true">
+                                                    <label>Account Number</label>
+                                                    <input type="text" class="form-control" name="Account Number" required="" aria-required="true">
+                                                </div>
+                                            </div>
+
+                                            <!--NAME-->
+                                            <div class="col-md-12 padding-5">
+                                                <div class="form-group form-group-default required" aria-required="true">
+                                                    <label>Customer Last Name</label>
+                                                    <input type="text" class="form-control" name="Last Name" required="" aria-required="true">
+                                                </div>
+                                            </div>
+
+											</div>
+
+										</div>
+
+									</form>
+									<!--INFO END-->
+
+						</div>
+
+                    <div class="modal-footer">
+                        <button type="button" data-dismiss="modal" class="btn btn-lg btn-default w-50" style="margin:5px;">Cancel</button>
+                        <button type="button" class="btn btn-lg btn-primary w-50" style="margin:5px;">Next</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!--MODALS END-->
+
+<!--CONTAINER END-->
+
+	<!-- BEGIN VENDOR JS -->
+	<script src="assets/plugins/pace/pace.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js" integrity="sha512-WNLxfP/8cVYL9sj8Jnp6et0BkubLP31jhTG9vhL/F5uEZmg5wEzKoXp1kJslzPQWwPT1eyMiSxlKCgzHLOTOTQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+	<!--<script src="assets/plugins/jquery/jquery-3.2.1.min.js" type="text/javascript"></script>-->
+	<script src="assets/plugins/modernizr.custom.js" type="text/javascript"></script>
+	<script src="assets/plugins/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
+	<script src="assets/plugins/tether/js/tether.min.js" type="text/javascript"></script>
+	<script src="assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="assets/plugins/jquery/jquery-easy.js" type="text/javascript"></script>
+	<script src="assets/plugins/jquery-unveil/jquery.unveil.min.js" type="text/javascript"></script>
+	<script src="assets/plugins/jquery-bez/jquery.bez.min.js"></script>
+	<script src="assets/plugins/jquery-ios-list/jquery.ioslist.min.js" type="text/javascript"></script>
+	<script src="assets/plugins/bootstrap-select2/select2.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="assets/plugins/jquery-validation/js/jquery.validate.min.js"></script>
+	<script src="assets/plugins/classie/classie.js" type="text/javascript"></script>
+	<script src="assets/plugins/imagesloaded/imagesloaded.pkgd.min.js"></script>
+	<script src="assets/plugins/jquery-actual/jquery.actual.min.js"></script>
+	<script src="assets/plugins/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+	<script type="text/javascript" src="assets/plugins/bootstrap-form-wizard/js/jquery.bootstrap.wizard.min.js"></script>
+	<script type="text/javascript" src="assets/plugins/jquery-datatable/media/js/jquery.dataTables.min.js"></script>
+	<script type="text/javascript" src="assets/plugins/jquery-datatable/extensions/TableTools/js/dataTables.tableTools.min.js"></script>
+	<script type="text/javascript" src="assets/plugins/jquery-datatable/extensions/Bootstrap/jquery-datatable-bootstrap.js"></script>
+	<script src="assets/plugins/datatables-responsive/js/datatables.responsive.js" type="text/javascript"></script>
+	<script src="assets/plugins/datatables-responsive/js/lodash.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="assets/plugins/jquery-validation/js/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/autonumeric/4.0.3/autoNumeric.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/autonumeric/4.1.0/autoNumeric.js"></script>
+
+
+    <script>
+        $(document).ready(function() {
+        var autoNumericInstance = new AutoNumeric('#inputone', AutoNumeric.getPredefinedOptions().numericPos.dotDecimalCharCommaSeparator);
+        var autoNumericInstance = new AutoNumeric('#inputtwo', AutoNumeric.getPredefinedOptions().numericPos.dotDecimalCharCommaSeparator);
+        var autoNumericInstance = new AutoNumeric('#inputthree', AutoNumeric.getPredefinedOptions().numericPos.dotDecimalCharCommaSeparator);
+        });
+    </script>
+
+	<!-- END VENDOR JS -->
+	<!-- BEGIN CORE TEMPLATE JS -->
+	<script src="pages/js/pages.js" type="text/javascript"></script>
+	<!-- END CORE TEMPLATE JS -->
+	<!-- BEGIN PAGE LEVEL JS -->
+	<script src="assets/js/card.js" type="text/javascript"></script>
+	<script src="assets/js/scripts.js" type="text/javascript"></script>
+	<!-- END PAGE LEVEL JS -->
+
+<script>
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();
+});
+
+/*DEFAULT CARD*/
+function selectDefaultCard(nameSelect)
+{
+    if(nameSelect){
+        admOptionValue = document.getElementById("defaultCard").value;
+        if(admOptionValue == nameSelect.value){
+            document.getElementById("admDivCheck").style.display = "block";
+        }
+        else{
+            document.getElementById("admDivCheck").style.display = "none";
+        }
+    }
+    else{
+        document.getElementById("admDivCheck").style.display = "none";
+    }
+}
+
+function autoPay() {
+  var x = document.getElementById("autopaytoggle");
+  if (x.innerHTML === "OFF") {
+    x.innerHTML = "<span style='color: #00c1f3;'>ON</span>";
+  } else {
+    x.innerHTML = "OFF";
+  }
+}
+
+var clickedCheckox;
+
+$('.status').click(function(){
+	clickedCheckbox = $(this);
+  if(clickedCheckbox.is(':checked')) {
+    $('#autopayon').modal('show');
+  } else {
+    $('#autopayoff').modal('show');
+  }
+
+  return false;
+});
+
+$("#activateBtn").click(function() {
+	clickedCheckbox.prop("checked", true);
+});
+
+$("#deactivateBtn").click(function() {
+	clickedCheckbox.prop("checked", false);
+});
+
+
+$(function(){
+    $(window).resize(function() {    // Optional: if you want to detect when the window is resized;
+        processBodies($(window).width());
+    });
+    function processBodies(width) {
+        if(width > 1200) {
+            $('.accordion-body').collapse('hide');
+        }
+        else {
+            $('.accordion-body').collapse('show');
+        }
+    }
+    processBodies($(window).width());
+});
+
+
+	$('.see-more').click(function(){
+		var $this = $(this);
+		$this.toggleClass('see-more');
+		if($this.hasClass('see-more')){
+			$this.text('3 of 6');			
+		} else {
+			$this.text('6 of 6');
+		}
+	});
+
+    $(window).on('load',function(){
+        $('#setupautopay').modal('show');
+    });
+
+    $(document).ready(function(){
+  $('#activateBtn').click(function(){
+    $('#autopaycomplete').modal('show');
+   });
+});
+
+
+// TAB HYPERLINK
+$(document).ready(function() {
+    function onHashChange() {
+        var hash = window.location.hash;
+
+        if (hash) {
+            // using ES6 template string syntax
+            $(`[data-toggle="tab"][href="${hash}"]`).trigger('click');
+        }
+    }
+
+    window.addEventListener('hashchange', onHashChange, false);
+    onHashChange();
+});
+
+// TAB HYPERLINK PAYMENT HISTORY
+$(document).ready(function() {
+    function onHashChange() {
+        var hash = window.location.hash;
+
+        if (hash) {
+            // using ES6 template string syntax
+            $(`[data-toggle="pastbills"][href="${hash}"]`).trigger('click');
+        }
+    }
+
+    window.addEventListener('hashchange', onHashChange, false);
+    onHashChange();
+});
+
+// TAB HYPERLINK SCHEDULED PAYMENT
+$(document).ready(function() {
+    function onHashChange() {
+        var hash = window.location.hash;
+
+        if (hash) {
+            // using ES6 template string syntax
+            $(`[data-toggle="scheduledpayments"][href="${hash}"]`).trigger('click');
+        }
+    }
+
+    window.addEventListener('hashchange', onHashChange, false);
+    onHashChange();
+});
+
+
+</script>
+
+
+</body>
+</html>

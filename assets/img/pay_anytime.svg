@@ -1,0 +1,7 @@
+<svg id="pay_anytime" xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39">
+  <circle id="Ellipse_26" data-name="Ellipse 26" cx="19.5" cy="19.5" r="19.5" fill="#00c1f3" opacity="0.21"/>
+  <g id="pending_actions_black_24dp" transform="translate(6.583 6.583)">
+    <rect id="Rectangle_138" data-name="Rectangle 138" width="25" height="25" transform="translate(0.417 0.417)" fill="none"/>
+    <path id="Path_229" data-name="Path 229" d="M17.767,12.649a5.3,5.3,0,1,0,5.3,5.3A5.3,5.3,0,0,0,17.767,12.649Zm1.747,7.784-2.277-2.277V14.767H18.3v2.955l1.959,1.959ZM18.826,3.118H15.459a3.164,3.164,0,0,0-5.973,0H6.118A2.124,2.124,0,0,0,4,5.236V21.122A2.124,2.124,0,0,0,6.118,23.24h6.471a7.141,7.141,0,0,1-1.5-2.118H6.118V5.236H8.236V8.413h8.472V5.236h2.118v5.38a7.445,7.445,0,0,1,2.118.635V5.236A2.124,2.124,0,0,0,18.826,3.118ZM12.472,5.236a1.059,1.059,0,1,1,1.059-1.059A1.062,1.062,0,0,1,12.472,5.236Z" transform="translate(0.236 0.059)" fill="#00c1f3"/>
+  </g>
+</svg>

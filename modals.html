@@ -1,0 +1,2622 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+	<meta charset="utf-8" />
+	<title>Pages - Admin Dashboard UI Kit - Blank Page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no" />
+	<link rel="apple-touch-icon" href="pages/ico/60.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="pages/ico/76.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="pages/ico/120.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="pages/ico/152.png">
+	<link rel="icon" type="image/x-icon" href="favicon.ico" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-touch-fullscreen" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<meta content="" name="description" />
+	<meta content="" name="author" />
+	<link href="assets/plugins/pace/pace-theme-flash.css" rel="stylesheet" type="text/css" />
+	<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="assets/plugins/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
+	<link href="assets/plugins/jquery-scrollbar/jquery.scrollbar.css" rel="stylesheet" type="text/css" media="screen" />
+	<link href="assets/plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css" media="screen" />
+	<link href="assets/plugins/switchery/css/switchery.min.css" rel="stylesheet" type="text/css" media="screen" />
+	<link type="text/css" rel="stylesheet" href="assets/plugins/jquery-datatable/media/css/jquery.dataTables.css">
+	<link type="text/css" rel="stylesheet" href="assets/plugins/jquery-datatable/extensions/FixedColumns/css/dataTables.fixedColumns.min.css">
+	<link media="screen" type="text/css" rel="stylesheet" href="assets/plugins/datatables-responsive/css/datatables.responsive.css">
+	<link media="screen" type="text/css" rel="stylesheet" href="assets/plugins/bootstrap-datepicker/css/datepicker3.css">
+	<link href="assets/plugins/bootstrap-daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css" media="screen">
+
+	<link href="pages/css/pages-icons.css" rel="stylesheet" type="text/css">
+	<link class="main-stylesheet" href="pages/css/pages.css" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+</head>
+
+<body class="fixed-header horizontal-menu horizontal-app-menu loader-circle print-receipt">
+
+	<!-- START PAGE-CONTAINER -->
+	<div class="header p-r-0 bg-primary">
+		<div class="header-inner header-md-height">
+			<a href="#" class="btn-link toggle-sidebar hidden-lg-up pg pg-menu text-white" data-toggle="horizontal-menu"></a>
+
+			<div class="no-border no-margin d-none d-sm-block">
+				<img src="assets/img/logo_new.png" alt="logo" data-src="assets/img/logo_new.png">
+			</div>
+
+			<div class="no-border no-margin w-25 d-block d-sm-none">
+				<img src="assets/img/logo_new.png" alt="logo" data-src="assets/img/logo_new.png" class="w-100">
+			</div>
+
+			<div class="d-flex align-items-center text-right">
+				<div class="pull-right">
+					<div class="d-flex align-items-center">
+						<a href="mailto:username@domain.com" class="text-white d-none d-sm-block">
+							username@domain.com
+						</a>
+
+						<span class="thumbnail-wrapper d32 circular m-l-10">
+							<img src="assets/img/avatar.png" alt="">
+						</span>
+
+						<div class="dropdown">
+							<button class="profile-dropdown-toggle text-white p-l-0 p-r-10 m-l-10" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">
+								<i class="fa fa-cog fa-2x"></i>
+							</button>
+
+							<div class="dropdown-menu dropdown-menu-right profile-dropdown m-t-10" role="menu">
+								<a href="my-profile.html" class="dropdown-item">
+									<i class="fa fa-user"></i>
+
+									My profile
+								</a>
+
+								<a href="notifications.html" class="dropdown-item">
+									<i class="fa fa-bell"></i>
+
+									Notification Settings
+								</a>
+
+								<a href="#" class="dropdown-item" data-toggle="modal" data-target="#modalTerms">
+									<i class="fa fa-shield"></i>
+
+									Payment Agreement
+								</a>
+
+								<a href="login.html" class="bg-master-lighter dropdown-item">
+									<i class="fa fa-sign-out"></i>
+
+									Sign Out
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--NEW NAV START-->
+		<div class="bg-white">
+				<div class="container-fluid">
+					<div class="row">
+							<div class="col-md-12 col-lg-12 offset-lg-1">
+									<div class="menu-bar header-sm-height">
+										<a href="#" class="btn-link toggle-sidebar d-lg-none pg pg-close" data-toggle="horizontal-menu"></a>
+
+
+									</div>
+								</div>
+					</div>
+				</div>
+			</div>
+			<!--NEW NAV END-->
+	</div>
+
+
+
+<div class="container">
+  <h2 style="margin:5px;">OSG Modals</h2>
+  <!-- Trigger the modal with a button -->
+  		<button type="button" class="btn btn-info btn-lg" style="margin:5px;" data-toggle="modal" data-target="#template">Modal Template</button>
+  		<button type="button" class="btn btn-info btn-lg" style="margin:5px;" data-toggle="modal" data-target="#loginTermsdnacondition">Terms</button>
+		<button type="button" class="btn btn-info btn-lg" style="margin:5px;" data-toggle="modal" data-target="#setupautopay">Setup AutoPay</button>
+		<button type="button" class="btn btn-info btn-lg" style="margin:5px;" data-toggle="modal" data-target="#autopayon">AutoPay On</button>
+		<button type="button" class="btn btn-info btn-lg" style="margin:5px;" data-toggle="modal" data-target="#autopayoff">AutoPay Off</button>
+		<button type="button" class="btn btn-info btn-lg" style="margin:5px;" data-toggle="modal" data-target="#addpayment">Edit Payment</button>
+		<button type="button" class="btn btn-info btn-lg" style="margin:5px;" data-toggle="modal" data-target="#autopaycomplete">AutoPay Complete</button>
+		<button type="button" class="btn btn-info btn-lg" style="margin:5px;" data-toggle="modal" data-target="#paymentschedule">View Payment Schedule</button>
+		<button type="button" class="btn btn-info btn-lg" style="margin:5px;" data-toggle="modal" data-target="#modalReceipt">Modal Receipt</button>
+
+	<!--NEW MODAL-->
+	<div tabindex="-1" class="modal fade" id="template" role="dialog" aria-labelledby="modalSlideUpLabel">
+				<div class="modal-dialog">
+					<div class="modal-content" id="Sucesstext">
+					<div id="Sucesstext">
+
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title p-b-30 text-center w-100">You have successfully registered <br>for eStatements.</h4>
+						</div>
+
+						<div class="modal-body p-b-30 text-center">
+								You will receive an activation email shortly. The activation email is 
+								our way of confirming that we have the correct email address on file.  
+								Click on the activation link in the email your enrollment, then log in 
+								using your username and password.
+
+							<h4 class="modal-title p-t-20 text-center">Welcome to eStatements.</h4>
+						</div>
+
+					</div>
+					<div class="text-center p-b-30">
+						<button class="btn btn-primary btn-lg btn-cons" id="btnok" aria-hidden="true">Return to My Dashboard</button>
+					</div>
+					</div>
+				</div>
+		</div>
+
+        <!--NEW PRIVACY/TERMS-->
+        <div class="modal fade" id="loginTermsdnacondition" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                        <div class="modal-header p-b-30">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">OSG Privacy Policy</h4>
+                        </div>
+
+						<div class="modal-body p-b-30" style="height: 250px;overflow-y: auto;">
+							<div>
+								<p>
+									Privacy Policy
+								</p>
+							</div>
+							<div>
+								<p>
+									Effective Date: Sunday March 1, 2020
+								</p>
+							</div>
+							<div>
+								<p>
+									OSG and the OSG Companies (“OSG,” “we,” “us” or “our”) respect the
+									privacy of the information you have entrusted to us. This Privacy
+									Policy (“Policy”) applies to the online collection of personal
+									information by OSG through our website at 
+									<a
+										href="https://www.osgconnect.com/"
+										target="_blank"
+										rel="noreferrer noopener"
+									>
+										www.osgconnect.com
+									</a>
+									 any other platforms where you provide information to us (the “Sites”)
+									along with other interactions with us through telephone, email or
+									otherwise.  By using our Sites and services (collectively, the
+									“Services”), you acknowledge you have read and understand the terms and
+									conditions of this Policy. If you do not agree to the terms and
+									conditions of this Policy, please do not use our Services.
+								</p>
+							</div>
+							<div>
+								<p>
+									Our use of information we collect as a service provider or processor
+									for our customers is limited by the restrictions placed on that
+									information by our clients and their own privacy policies.  You can
+									learn more about how your information is collected and used by our
+									clients by reviewing the privacy policies of the businesses that you
+									engage with.
+								</p>
+							</div>
+							<div>
+								<p>
+									If another OSG service sets forth a separate or additional privacy
+									policy or statement, that separate or additional policy shall apply in
+									connection with your use of that service.
+								</p>
+							</div>
+							<div>
+								<p>
+									We will use personal information about you only for the purposes and in
+									the manner set forth below, which describes the steps we take to ensure
+									the processing of personal data is in compliance with applicable data
+									protection law, including California’s Consumer Privacy Act (“CCPA”)
+									and the European Union’s General Data Protection Regulation (“GDPR”).
+								</p>
+							</div>
+							<div>
+								<p>
+									INFORMATION WE COLLECT
+								</p>
+							</div>
+							<div>
+								<p>
+									We collect the following categories of information from and about you:
+								</p>
+							</div>
+							<div>
+								<p>
+									Personal Information You Give to Us
+								</p>
+							</div>
+							<div>
+								<div>
+									<p>
+										Personal Information is information that identifies, relates to,
+										describes, is capable of being associated with, or could reasonably
+										be linked with a particular individual.  We may ask you to provide
+										your Personal Information voluntarily as you interact with us on
+										the Sites, or when you speak with us by telephone or communicate by
+										email.  Personal Information may include, but is not limited to,
+										your:
+									</p>
+								</div>
+								<div>
+									<ul>
+										<li>
+											<p>
+												Email address
+											</p>
+										</li>
+										<li>
+											<p>
+												First name and last name
+											</p>
+										</li>
+										<li>
+											<p>
+												Phone number
+											</p>
+										</li>
+										<li>
+											<p>
+												Mailing address
+											</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div>
+								<p>
+									The Personal Information we collect, the basis of processing and the
+									purposes of processing are detailed below (see “Sharing and Disclosure
+									of Information” section below). Sometimes, these activities are carried
+									out by third parties.  The Personal Information we collect about you
+									helps us manage our relationship with you, primarily by allowing us to
+									respond to your questions, to improve website experience, and to notify
+									you of our Services.  We also collect information from you for
+									potential employment purposes.
+								</p>
+							</div>
+							<div>
+								<p>
+									Information Collected Automatically
+								</p>
+							</div>
+							<div>
+								<p>
+									We may also collect data about you automatically through the Sites that
+									may be Personal Information depending on the circumstances. Examples of
+									such data include your IP address, device operating system type,
+									browser type, domain, and other system settings.  We may collect data
+									about the website that you were visiting before you navigated to our
+									Sites, and the website that you visit after you leave our Site.  We
+									collect this data primarily to help us better understand our Sites
+									traffic and to optimize our delivery of the Sites to you.
+								</p>
+							</div>
+							<div>
+								<p>
+									Individuals in the European Union
+								</p>
+							</div>
+							<div>
+								<p>
+									For individuals in the EU, “Personal Data” has the meaning described in
+									Article 4.1 of the GDPR.  The following lawful bases support our
+									processing activities under the GDPR:
+								</p>
+							</div>
+							<div>
+								<div>
+									<div id="{a094d64b-87a4-4b15-b090-f39799efb651}{58}">
+									</div>
+									<table border="1">
+										<tbody>
+											<tr>
+												<td>
+													<div>
+														<div>
+															<p>
+																Data Source
+															</p>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div>
+														<div>
+															<p>
+																Personal Data Collected
+															</p>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div>
+														<div>
+															<p>
+																Basis of Processing
+															</p>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div>
+														<div>
+															<p>
+																Representative of Prospective Customers
+															</p>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div>
+														<div>
+															<p>
+																We collect your name, email address, job
+																title, current organization, current
+																industry, business interests, and phone
+																number.
+															</p>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div>
+														<div>
+															<p>
+																Necessary for Performance of a Contract. It
+																is necessary to take steps at your request
+																prior to entering into a contract (e.g. to
+																respond to your queries and to provide you
+																with further information; or where you have
+																submitted an application to become our
+																Customer).
+															</p>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div>
+														<div>
+															<p>
+																Vendor and Supplier Representatives
+															</p>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div>
+														<div>
+															<p>
+																We collect your name, email address,
+																current company, current industry, business
+																interests, and phone number.
+															</p>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div>
+														<div>
+															<p>
+																Legitimate Interest. It is in our
+																legitimate interests to store
+																vendor/supplier related information so that
+																we can refer back to it (e.g. for our
+																general recordkeeping and supplier
+																relationship management). Our interests are
+																not overridden by the interests or
+																fundamental rights and freedoms of the data
+																subject.
+															</p>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div>
+														<div>
+															<p>
+																Those who wish to be included on our
+																mailing list(s)
+															</p>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div>
+														<div>
+															<p>
+																We collect your name, current company, and
+																email address.
+															</p>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div>
+														<div>
+															<p>
+																Consent. If you subsequently wish to
+																withdraw your consent, you may do so at any
+																time by clicking the “unsubscribe” link at
+																the bottom of these communications.
+															</p>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div>
+														<div>
+															<p>
+																Prospective Employees
+															</p>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div>
+														<div>
+															<p>
+																We will collect your name, email address,
+																phone number.
+															</p>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div>
+														<div>
+															<p>
+																Necessary in order to take steps prior to
+																entering into an employment contract;
+																Consent.
+															</p>
+														</div>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div>
+							</div>
+							<div>
+								<p>
+									California Residents
+								</p>
+							</div>
+							<div>
+								<p>
+									The Personal Information about you that we collect includes information
+									within the categories of data defined by California state privacy laws
+									and provided below. Under the CCPA, “Personal Information” means
+									information that identifies, relates to, describes, is reasonably
+									capable of being associated with, or could reasonably be linked with a
+									particular consumer or household.  Personal Information does not
+									include:
+								</p>
+							</div>
+							<div>
+								<p>
+									(1) de-identified or aggregated information;
+								</p>
+							</div>
+							<div>
+								<p>
+									(2) “publicly available information” that is lawfully made available
+									from federal, state, or local government records; or
+								</p>
+							</div>
+							<div>
+								<p>
+									(3) information excluded from the CCPA, such as Protected Health
+									Information or medical information that is subject to HIPAA, or other
+									personal information covered by certain other privacy laws, such as the
+									Fair Credit Reporting Act, the Gramm-Leach-Bliley Act, or California
+									Financial Information Privacy Act, and the Driver’s Privacy Protection
+									Act of 1994.
+								</p>
+							</div>
+							<div>
+								<p>
+									The following categories also represent the categories of Personal
+									Information that we have collected over the past 12 months. Inclusion
+									of a category in the list below indicates only that, depending on the
+									services and products we provide you, we may collect some information
+									within that category. It does not necessarily mean that we collect all
+									information listed in a particular category for all of our customers. 
+									We do not and will not sell Personal Information about you, as defined
+									by CCPA.  We also have not done so for the last 12 months.
+								</p>
+							</div>
+							<div>
+								<div>
+									<div id="{a094d64b-87a4-4b15-b090-f39799efb651}{59}">
+									</div>
+									<table border="1">
+										<tbody>
+											<tr>
+												<td>
+													<div>
+														<div>
+															<p>
+																Categories of Personal Information
+																Collected
+															</p>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div>
+														<div>
+															<p>
+																Representative Examples of Data Elements
+															</p>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div>
+														<div>
+															<p>
+																Sources of Personal Information
+															</p>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div>
+														<div>
+															<p>
+																Purposes for Collecting
+															</p>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div>
+														<div>
+															<p>
+																Categories of Third Parties with whom we
+																may share this information
+															</p>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div>
+														<div>
+															<p>
+																Contact Information
+															</p>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div>
+														<div>
+															<p>
+																Full name, alias, postal address, unique
+																personal identifier, online identifier,
+																Internet Protocol address, email address,
+																telephone number.
+															</p>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div>
+														<div>
+															<p>
+																You
+															</p>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div>
+														<div>
+															<p>
+																To identify and communicate with you; to
+																respond to your information requests; to
+																send marketing or promotional information;
+																and for our everyday business purposes.
+															</p>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div>
+														<div>
+															<p>
+																Our affiliates and our third party service
+																providers who deliver our communications.
+															</p>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div>
+														<div>
+															<p>
+																Prospective Employment Related Information
+															</p>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div>
+														<div>
+															<p>
+																Full name, postal address, current company,
+																Internet Protocol address, email address,
+																telephone number, information about your
+																employment that you voluntarily choose to
+																share.
+															</p>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div>
+														<div>
+															<p>
+																You
+															</p>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div>
+														<div>
+															<p>
+																To take steps prior to entering into an
+																employment contract
+															</p>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div>
+														<div>
+															<p>
+																None
+															</p>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div>
+														<div>
+															<p>
+																Internet or another similar network
+																activity
+															</p>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div>
+														<div>
+															<p>
+																Browsing history, search history,
+																information on a consumer’s interaction
+																with a website, application, or
+																advertisement.
+															</p>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div>
+														<div>
+															<p>
+																Your device
+															</p>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div>
+														<div>
+															<p>
+																To understand our Sites traffic and to
+																optimize our delivery of the Sites
+															</p>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div>
+														<div>
+															<p>
+																Third party data analytics providers
+															</p>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div>
+														<div>
+															<p>
+																Geolocation data
+															</p>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div>
+														<div>
+															<p>
+																Physical location.
+															</p>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div>
+														<div>
+															<p>
+																Your device
+															</p>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div>
+														<div>
+															<p>
+																Marketing Purposes
+															</p>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div>
+														<div>
+															<p>
+																None
+															</p>
+														</div>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div>
+								<div>
+								</div>
+								<div>
+									<p>
+										COOKIES AND OTHER TRACKING TOOLS
+									</p>
+								</div>
+								<div>
+									<p>
+										When you interact with the Sites and Services, certain information
+										about your use is automatically collected. This information
+										includes your domain name and host for Internet access; the
+										Internet address of the site from which you came; the date and time
+										of your access; your computer’s IP address and information about
+										its operating system, browser and host; the date and time you
+										access the Sites and the pages you visit.
+									</p>
+								</div>
+								<div>
+									<p>
+										Much of this information is collected through cookies, web beacons,
+										and other tracking technologies, as well as through your web
+										browser or device (e.g., IP address, MAC address, browser version,
+										etc.). We use cookies for the following purposes:
+									</p>
+								</div>
+								<div>
+									<ul>
+										<li>
+											<p>
+												Performance/Analytics: We use these cookies to analyze how
+												the Sites and Services are accessed, used or is
+												performing—including information about payment-related
+												activities. We use this information to maintain, operate
+												and continually improve the Sites and Services and to
+												create products and services that may be of interest to our
+												clients and end-users for analysis and other purposes.
+											</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div>
+								<div>
+								</div>
+								<div>
+									<ul>
+										<li>
+											<p>
+												Advertising: Interest-based advertising is the collection
+												of data across different websites and/or difference devices
+												for the purpose of tailoring advertising based on
+												preferences or interests known or inferred from the data
+												collected. We allow third parties who assist us in serving
+												advertising regarding the Sites when you leave the Sites,
+												to collect or receive information from our website and
+												elsewhere on the internet and use that information to
+												provide measurement services and target ads.
+											</p>
+										</li>
+									</ul>
+								</div>
+								<div>
+								</div>
+								<div>
+									<p>
+										The third-party website analytics tools that collect automated
+										information about visitor traffic on our Sites and Services include
+										Google Analytics. Google Analytics is a web analytics service
+										provided by Google, Inc., on our Sitse and Services. Google
+										Analytics uses cookies or other tracking technologies to help us
+										analyze how users interact with and use the Sites and Services,
+										compile reports on user activity, and provide other services
+										related to activity and usage. The technologies used by Google may
+										collect information such as your IP address, time of visit, whether
+										you are a return visitor, and any referring website. The
+										information generated by Google Analytics will be transmitted to
+										and stored by Google and will be subject to Google’s
+										<a
+											href="https://www.google.com/policies/privacy/partners/"
+											target="_blank"
+											rel="noreferrer noopener"
+										>
+											privacy policies
+										</a>
+										. You can learn how Google collects and processes data and how to
+										opt out of tracking of analytics by Google, by clicking
+										<a
+											href="http://www.google.com/policies/privacy/partners/"
+											target="_blank"
+											rel="noreferrer noopener"
+										>
+											here
+										</a>
+										-
+										<a
+											href="https://policies.google.com/privacy?hl=en"
+											target="_blank"
+											rel="noreferrer noopener"
+										>
+											https://policies.google.com/privacy?hl=en
+										</a>
+										.
+									</p>
+								</div>
+								<div>
+									<p>
+										If you do not want to receive cookies, you may set your browser to
+										reject them. However, if you turn cookies off, you may not have
+										access to some of our services and features. We also may allow
+										third parties to issue cookies, pixels, web beacons and other
+										tracking technologies on our Sites and Services to help us compile
+										information regarding the operations of our Sites and Services.
+									</p>
+								</div>
+							</div>
+							<div>
+								<p>
+									You can learn more about ad serving companies and the options available
+									to limit their collection and use of your information by visiting the
+									websites for the
+									<a
+										href="http://www.networkadvertising.org/choices/"
+										target="_blank"
+										rel="noreferrer noopener"
+									>
+										Network Advertising Initiative
+									</a>
+									, the
+									<a
+										href="http://www.aboutads.info/choices"
+										target="_blank"
+										rel="noreferrer noopener"
+									>
+										Digital Advertising Alliance
+									</a>
+									,
+									<a
+										href="http://youradchoices.ca/choices/"
+										target="_blank"
+										rel="noreferrer noopener"
+									>
+										Adchoices (for Canada)
+									</a>
+									and the
+									<a
+										href="http://www.youronlinechoices.eu/"
+										target="_blank"
+										rel="noreferrer noopener"
+									>
+										European Interactive Digital Advertising Initiative
+									</a>
+									. Similarly, you can learn about your options to opt-out of mobile app
+									tracking by certain advertising networks through your device settings
+									and by resetting the advertiser ID on your Apple or Android device.
+								</p>
+							</div>
+							<div>
+								<p>
+									Because an industry-standard Do-Not-Track protocol has not yet been
+									established, our information collection practices on our Sites and
+									Services will continue to operate as described in this Privacy Policy
+									regardless of any “Do Not Track” signals that may be sent by certain
+									browsers. However, you may refuse to accept cookies in order to prevent
+									tracking activities.
+								</p>
+							</div>
+							<div>
+							</div>
+							<div>
+								<p>
+									USE OF INFORMATION COLLECTED
+								</p>
+							</div>
+							<div>
+								<p>
+									We use the information we collect from or about you for the following
+									purposes to:
+								</p>
+							</div>
+							<div>
+								<div>
+									<ul>
+										<li>
+											<p>
+												Provide, maintain, personalize, optimize and improve the
+												Sites and Services, including for analytics related to our
+												products and offerings and to provide information to our
+												clients, end-users and others.
+											</p>
+										</li>
+										<li>
+											<p>
+												Detect, investigate, and prevent activities that may
+												violate our policies or be fraudulent or illegal.
+											</p>
+										</li>
+										<li>
+											<p>
+												Send you marketing communications.
+											</p>
+										</li>
+										<li>
+											<p>
+												Respond to your requests and inquiries.
+											</p>
+										</li>
+										<li>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div>
+								<div>
+									<ul>
+										<li>
+											<p>
+												For other legitimate business and operating purposes.
+											</p>
+										</li>
+									</ul>
+								</div>
+								<div>
+									<p>
+										SHARING AND DISCLOSURE OF INFORMATION
+									</p>
+								</div>
+								<div>
+									<p>
+										We may share or disclose your information to the following
+										categories of third parties and for the following reasons:
+									</p>
+								</div>
+								<div>
+									<ul>
+										<li>
+											<p>
+												To our affiliates, third-party service providers, agents or
+												independent contractors who help us maintain or provide our
+												Services and provide other administrative services to us.
+											</p>
+										</li>
+										<li>
+											<p>
+												We may share the information we collect about you in the
+												course of any reorganization process including, but not
+												limited to, mergers, acquisitions, and sales of all or
+												substantially all of our assets.
+											</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div>
+								<div>
+									<ul>
+										<li>
+											<p>
+												We may disclose the information we collect about you to law
+												enforcement, government agencies, and other related third
+												parties, in order to comply with the law, enforce our
+												policies, or protect our or others’ rights, property or
+												safety.
+											</p>
+										</li>
+										<li>
+											<p>
+												We may share with other third parties only with your
+												consent or direction to do so.
+											</p>
+										</li>
+									</ul>
+								</div>
+								<div>
+									<p>
+										We disclose the personal information we collect about you for a
+										business purpose to the following categories of third parties:
+										service providers for website services, email services, and data
+										analytics services.
+									</p>
+								</div>
+								<div>
+									<p>
+										We may change our ownership or corporate organization while
+										providing the Sites and Services. We may transfer to another entity
+										or its affiliates or service providers some or all information
+										about you in connection with, or during negotiations of, any
+										merger, acquisition, sale of assets or any line of business, change
+										in ownership control, or financing transaction.
+									</p>
+								</div>
+								<div>
+									<p>
+										OPT-OUT
+									</p>
+								</div>
+							</div>
+							<div>
+								<p>
+									We provide you the opportunity to opt-out of marketing communications
+									by clicking the “unsubscribe” link in email communications or by
+									contacting us using the contact information provided below. We will
+									process your request as soon as possible in accordance with applicable
+									law, but please be aware that in some circumstances you may receive a
+									few more messages until the unsubscribe request is processed.
+								</p>
+							</div>
+							<div>
+								<p>
+									Additionally, we may send you information regarding our Services, such
+									as information about changes to our policies and other notices and
+									disclosures required by law. Generally, users cannot opt-out of these
+									communications, but they will be primarily informational in nature,
+									rather than promotional.
+								</p>
+							</div>
+							<div>
+								<p>
+									THIRD-PARTY LINKS
+								</p>
+							</div>
+							<div>
+								<p>
+									Our website contains links to other sites. When you follow these links
+									to those sites, the operators of those websites may collect information
+									about you.  OSG does not review, control or monitor the practices,
+									information or materials on any other websites, and are not responsible
+									or liable for the communications, information, content or materials
+									from or the practices and policies (including without limitation
+									privacy or data collection practices or policies) of any of those
+									sites.  If you have any questions about how these other sites use your
+									information, you should review their policies and contact them
+									directly.
+								</p>
+							</div>
+							<div>
+								<p>
+									RIGHTS AVAILABLE TO CALIFORNIA RESIDENTS
+								</p>
+							</div>
+							<div>
+								<div>
+									<p>
+										Under the CCPA, residents of California are provided with certain
+										rights regarding their Personal Information (as defined in the
+										CCPA). The following section outlines these rights:
+									</p>
+								</div>
+								<div>
+									<ol start="1">
+										<li>
+											<p>
+												Right to Know: You have the right to request that we
+												disclose certain information to you about our collection
+												and use of your Personal Information over the past 12
+												months. Once we receive and confirm your verifiable
+												consumer request, we will disclose to you:
+											</p>
+										</li>
+									</ol>
+								</div>
+								<div>
+									<ul>
+										<li>
+											<p>
+												the Categories of Personal Information we have collected
+												from you
+											</p>
+										</li>
+										<li>
+											<p>
+												the business purposes for which such Personal Information
+												was collected
+											</p>
+										</li>
+										<li>
+											<p>
+												the Sources of Personal Information we have collected from
+												you
+											</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div>
+								<div>
+									<ul>
+										<li>
+											<p>
+												the specific pieces of Personal Information stored about
+												you
+											</p>
+										</li>
+										<li>
+											<p>
+												the categories of 3rd parties with whom we share Personal
+												Information
+											</p>
+										</li>
+										<li>
+											<p>
+												If we shared your Personal Information for a business
+												purpose, the categories of Personal Information that each
+												category of recipient obtained.
+											</p>
+										</li>
+									</ul>
+								</div>
+								<div>
+									<p>
+										Right to Request Deletion: You have the right to request deletion
+										of your Personal Information that has been collected and retained
+										from you subject to certain exceptions. Once we receive and confirm
+										your verifiable consumer request, we will delete your Personal
+										Information from our records, unless there is an applicable
+										exception.  You or an authorized agent registered with the
+										California Secretary of State that you authorize to act on your
+										behalf, may exercise the Rights twice in a 12-month period. Your
+										verifiable request must include sufficient detail for us to
+										understand, evaluate, and respond to it.  It must also provide
+										sufficient information that allows us to reasonably verify that you
+										are the individual about whom we have collected Personal
+										Information or an authorized agent representing the individual. 
+										Please note that in some cases we may need to obtain information
+										from you as part of the verification process to verify your
+										identity to a reasonable degree.  We may require you to provide
+										Personal Information as part of the verification process.  For
+										authorized agents, we may require a signed, written authorization,
+										a notarized affidavit, or a valid power of attorney.  We will only
+										use this information for the purpose of verifying the requestor’s
+										identity or authority.  To exercise these rights, please email us
+										at 
+										<a href="" target="_blank" rel="noreferrer noopener">
+											privacy@osgconnect.com
+										</a>
+										 or complete the CCPA Request Form using the link below:
+									</p>
+								</div>
+								<div>
+									<p>
+										<a
+											href="https://osgconnect.com/privacy-policy/#contactForm7WithPopup3291"
+											target="_blank"
+											rel="noreferrer noopener"
+										>
+											CCPA Request Form
+										</a>
+									</p>
+								</div>
+							</div>
+							<div>
+								<p>
+									We will acknowledge your right to know or deletion request within ten
+									(10) business days of receipt and provide information about how we will
+									process the request.  In many cases we will respond to your request
+									within 45 days.  In some cases we may extend the time to respond for
+									another 45 days.  If this extension is necessary, we will give you
+									notice and the reason that we need the additional time to respond. 
+								</p>
+							</div>
+							<div>
+								<p>
+									If we are unable to verify your identity or your authority to make the
+									request within 45 days, we cannot fully respond to you and may deny
+									your request.  We may in such cases elect to treat the deletion request
+									as an opt-out request.  For requests seeking specific pieces of
+									information, we will treat it as a request for the disclosure of the
+									categories of Personal Information about the consumer.
+								</p>
+							</div>
+							<div>
+								<p>
+									We retain records of your requests, including the request data, nature
+									of the request, manner of submission, the response and any basis of
+									denial for a period of 24 months.
+								</p>
+							</div>
+							<div>
+								<p>
+									We will not discriminate against you in terms of services, the level or
+									quality of services, or pricing for exercising any of your CCPA rights.
+									If there are excessive requests, we may charge a reasonable fee as
+									permitted under the CCPA.
+								</p>
+							</div>
+							<div>
+								<p>
+									RIGHT TO OPT-OUT OF DATA SALES FOR NEVADA RESIDENTS
+								</p>
+							</div>
+							<div>
+								<div>
+									<p>
+										We do not sell your covered information, as defined by Section
+										603A.320 of the Nevada Revised Statutes.  If you reside in Nevada,
+										you have the right to submit a request to us at 
+										<a href="" target="_blank" rel="noreferrer noopener">
+											privacy@osgconnect.com
+										</a>
+										 regarding the sale of covered information.  Please include
+										“Nevada” in your email subject line, and include the following
+										information in your email: your name, Nevada resident address, and
+										email address.  We will respond within sixty (60) days of receiving
+										your request.
+									</p>
+								</div>
+								<div>
+									<p>
+										RIGHTS FOR INDIVIDUALS LOCATED IN THE EUROPEAN UNION
+									</p>
+								</div>
+								<div>
+									<p>
+										Under the GDPR, individuals in the European Union are provided with
+										certain rights regarding their Personal Data, as defined under that
+										Regulation. The following section provides notice of these rights:
+									</p>
+								</div>
+								<div>
+									<ul>
+										<li>
+											<p>
+												You have the right to access your Personal Data.  You have
+												a right to know if we process any Personal Data about you
+												and, be sent a copy of the Personal Data, along with an
+												explanation of the purposes of the processing, and the
+												categories of recipients to whom we have disclosed your
+												Personal Data.
+											</p>
+										</li>
+										<li>
+											<p>
+												You have to right of rectification of your Personal Data.
+												You have the right to correct your Personal Data is it is
+												inaccurate.  You may change or update your information at
+												any time by requesting access to the Personal Data that has
+												been collected about you and confirm or change that
+												information.
+											</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div>
+								<div>
+									<ul>
+										<li>
+											<p>
+												You have the right to have your Personal Data erased under
+												certain circumstances. You may exercise this right if you
+												(a) withdraw your consent and there is no other lawful
+												basis for processing the data; (b) if the data is no longer
+												necessary for the purpose for which it was collected; (c)
+												where you have objected to the use of the data for direct
+												marketing; (d) where the data has been unlawfully
+												processed; or (e) where erasure is necessary to comply with
+												a legal obligation.  Please note that there are also
+												exceptions to this right that may prevent you from
+												exercising this right.  For example, if the data is
+												necessary for the establishment, exercise, or defense of
+												legal claims, your right to erasure will not apply.
+											</p>
+										</li>
+										<li>
+											<p>
+												You have the right to restrict the processing of your
+												Personal Data under certain circumstances.  You may
+												exercise this right if (a) you contest the accuracy of the
+												Personal Data collected and retained about you; (b) if the
+												processing is unlawful; (c) if the data is no longer
+												necessary for the purposes of processing but it is required
+												for the establishment, exercise, or defense of legal
+												claims; or (d) if you have objected to the processing of
+												your data based on the public interest or the legitimate
+												interest of others. 
+											</p>
+										</li>
+										<li>
+											<p>
+												You have the right to object to the processing of your
+												Personal Data. You have the right to object to direct
+												marketing at any time.  You can also object to the
+												processing of your Personal Data which is based on
+												legitimate interests.  Likewise, you can object to the
+												processing of your Personal Data for scientific or
+												historical research or statistics purposes.  Note that
+												while the right to object to direct marketing is absolute,
+												the two other rights to object are more limited.
+											</p>
+										</li>
+										<li>
+											<p>
+												You have the right to port (transfer) Personal Data you
+												have provided to us, either to you or to another provider. 
+												You may request to be given a copy the Personal Data that
+												you have provided to us and that we have processed through
+												automated means based on your consent in a commonly used,
+												machine-readable electronic format where technologically
+												possible, for your re-use.
+											</p>
+										</li>
+										<li>
+											<p>
+												You have a right to revoke your consent to or to opt-out of
+												how your Personal Data is processed as described in this
+												Policy.  You may withdraw consent to the extent that our
+												processing of your Personal Data is based on your consent
+											</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div>
+								<div>
+									<ul>
+										<li>
+											<p>
+												You have the right to lodge a complaint. If you have any
+												concerns or a complaint about how your Personal Data has
+												been or is being processed, please let us know directly by
+												contacting us by email.  You also have the right to lodge a
+												complaint with the applicable supervisory authority in the
+												country you live in, the country you work in, or the
+												country where you believe your rights under applicable data
+												protection laws have been violated.
+											</p>
+										</li>
+									</ul>
+								</div>
+								<div>
+									<p>
+										To find out more about your data subject rights under GDPR, you may
+										contact the data protection agency of your member country, for
+										e.g., the Data Protection Commission of Ireland. 
+									</p>
+								</div>
+								<div>
+									<p>
+										To exercise your rights, please contact us: our contact details are
+										in the “Contact Us” section below. Please make it clear which
+										right(s) you want to exercise, for example by heading your letter
+										“right to object” if you wish to exercise the right to object.
+									</p>
+								</div>
+								<div>
+									<p>
+										NOTICE REGARDING PUBLIC POSTING AREAS
+									</p>
+								</div>
+								<div>
+									<p>
+										Please note that any information you include in a message you post
+										to any public posting area is available to anyone with Internet
+										access. If you do not want people to know your email address, for
+										example, do not include it in any message you post publicly. PLEASE
+										BE EXTREMELY CAREFUL WHEN DISCLOSING ANY INFORMATION IN PUBLIC
+										POSTING AREAS. OSG IS NOT RESPONSIBLE FOR THE USE BY OTHERS OF THE
+										INFORMATION THAT YOU DISCLOSE IN PUBLIC POSTING AREAS.
+									</p>
+								</div>
+							</div>
+							<div>
+								<p>
+									SECURITY
+								</p>
+							</div>
+							<div>
+								<p>
+									We implement appropriate technical and organizational security measures
+									to ensure the security of your Personal Information.  Please
+									understand, however, that no data transmissions over the Internet can
+									be guaranteed to be 100% secure. Consequently, OSG cannot ensure or
+									warrant the security of any information you transmit to us and you
+									understand that any information that you transfer to us is done at your
+									own risk. If we learn of a security system breach, we may attempt to
+									notify you electronically so that you can take appropriate protective
+									steps. By using the Services or providing Personal Information to us,
+									you agree that we can communicate with you electronically regarding
+									security, privacy and administrative issues relating to your use of the
+									Services. Depending on where you live, you may have a legal right to
+									receive notice of a security breach in writing.
+								</p>
+							</div>
+							<div>
+								<p>
+									You are responsible for safeguarding any username, password or other
+									credentials provided for access to the Services, and must not share
+									that information with anyone. If you learn that your credentials are
+									compromised, please contact us immediately.
+								</p>
+							</div>
+							<div>
+								<p>
+									INTERNATIONAL DATA TRANSFERS
+								</p>
+							</div>
+							<div>
+								<p>
+									OSG is based in the U.S. If you choose to provide us with information,
+									please understand that your Personal Information may be transferred to
+									the U.S. and that we may transfer that information to our affiliates
+									and subsidiaries or to other third parties, across borders, and from
+									your country or jurisdiction to other countries or jurisdictions around
+									the world. If you are visiting from the EU or other regions with laws
+									governing data collection and use that may differ from U.S. law, please
+									note that you are transferring your Personal Information to the U.S.
+									and other jurisdictions which may not have the same levels of data
+									protection as the EU, and Personal Information may be subject to access
+									by and disclosure to law enforcement agencies in the U.S.
+								</p>
+							</div>
+							<div>
+								<p>
+									We put in place appropriate operational, procedural and technical
+									measures in order to ensure the protection of your Personal
+									Information. You acknowledge you understand that by providing your
+									Personal Information: (i) your Personal Information will be used for
+									the uses identified above in accordance with this Policy; and (ii) your
+									Personal Information may be transferred to the U.S. and other
+									jurisdictions as indicated above, in accordance with applicable law.
+								</p>
+							</div>
+							<div>
+								<p>
+									BUSINESS TRANSFER
+								</p>
+							</div>
+							<div>
+								<p>
+									In the event that all or part of our assets are sold or acquired by
+									another party, or in the event of a merger, we retain the right to
+									transfer your Personal Information to the successor business.  The new
+									business would retain the right to use your Personal Information
+									according to the terms of this privacy notice as well as to any changes
+									to this privacy notice as instituted by the new business.
+								</p>
+							</div>
+							<div>
+								<p>
+									HOW WE RESPOND TO DO-NOT-TRACK SIGNALS
+								</p>
+							</div>
+							<div>
+								<p>
+									At this time our website does not recognize automated browser signals
+									regarding tracking mechanisms, which may include “Do Not Track”
+									instructions.
+								</p>
+							</div>
+							<div>
+								<div>
+									<p>
+										DATA RETENTION PERIODS
+									</p>
+								</div>
+								<div>
+									<p>
+										OSG retains your Personal Information for as long as necessary for
+										the purposes for which it was collected. In certain instances, we
+										may keep it longer:
+									</p>
+								</div>
+								<div>
+									<ul>
+										<li>
+											<p>
+												for as long as necessary to comply with any legal
+												requirement;
+											</p>
+										</li>
+										<li>
+											<p>
+												for backup and disaster recovery purposes;
+											</p>
+										</li>
+										<li>
+											<p>
+												for as long as necessary to protect our legal interests or
+												otherwise pursue our legal rights and remedies; or
+											</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div>
+								<div>
+									<ul>
+										<li>
+											<p>
+												for data that has been aggregated or otherwise rendered
+												anonymous in such a manner that you are no longer
+												identifiable, indefinitely.
+											</p>
+										</li>
+									</ul>
+								</div>
+								<div>
+									<p>
+										CHANGES TO THIS PRIVACY POLICY
+									</p>
+								</div>
+								<div>
+									<p>
+										We reserve the right to change this Policy. When we do, we will
+										also revise the “Effective Date” at the top of this Policy. If we
+										make material changes to the Policy, we will notify you by placing
+										a prominent notice on our website and/or by sending you an email at
+										the email address we have on file for you. We encourage you to
+										periodically review this Policy to keep up to date on how we are
+										handling your Personal Information.
+									</p>
+								</div>
+								<div>
+									<p>
+										ANTI-SPAM POLICY
+									</p>
+								</div>
+								<div>
+									<p>
+										OSG is committed to permission-based e-mail marketing practices
+										and, in support thereof, has established this no-tolerance
+										Anti-Spam Policy.
+									</p>
+								</div>
+							</div>
+							<div>
+								<div>
+									<p>
+										OSG has no tolerance for the sending of spam and unsolicited mail.
+										To ensure CAN-SPAM compliance, OSG requires that every e-mail
+										deployed through OSG with the primary purpose of delivering
+										commercial content meets the following criteria:
+									</p>
+								</div>
+								<div>
+									<ul>
+										<li>
+											<p>
+												Accurately identifies the sender in the header information;
+											</p>
+										</li>
+										<li>
+											<p>
+												Uses a subject line that accurately represents the content
+												of the e-mail;
+											</p>
+										</li>
+										<li>
+											<p>
+												Identifies the message as an advertisement;
+											</p>
+										</li>
+										<li>
+											<p>
+												Includes our customer’s mailing address if sent out on
+												behalf of the customer;
+											</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div>
+								<div>
+									<ul>
+										<li>
+											<p>
+												Provides a mechanism to opt out; and
+											</p>
+										</li>
+										<li>
+											<p>
+												Honors opt-out requests promptly. If you believe that you
+												have received spam connected to OSG in any way, send a
+												complaint that includes the unsolicited e-mail to 
+												<a href="" target="_blank" rel="noreferrer noopener">
+													privacy@osgconnect.com
+												</a>
+												. Please provide any other information that you believe may
+												help us in our investigation.
+											</p>
+										</li>
+									</ul>
+								</div>
+								<div>
+									<p>
+										CONTACT US
+									</p>
+								</div>
+								<div>
+									<p>
+										If you have any questions, comments or concerns about our privacy
+										practices or this Policy, please contact us at:
+									</p>
+								</div>
+								<div>
+									<p>
+										OSG
+										<br/>
+										osgconnect.com
+										<br/>
+										<a href="" target="_blank" rel="noreferrer noopener">
+											privacy@osgconnect.com
+											<br/>
+										</a>
+										100 Challenger Road, Suite 303
+										<br/>
+										Ridgefield Park, NJ 07660
+										<br/>
+										201-871-1100
+									</p>
+								</div>
+							</div>
+						</div>
+
+                        <div class="modal-footer padding-25">
+                            <button type="button" data-dismiss="modal" class="btn btn-default pull-right m-l-5" onclick="modalclose();">Cancel</button>
+                            <button type="button" class="btn btn-primary pull-right" onclick="LoginLog();">Accept</button>
+                        </div>
+                </div>
+     
+            </div>
+        </div>
+
+        <!--TEMPLATE-->
+        <div class="modal fade" id="modalid" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="modal-header p-b-30">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">HEADER</h4>
+                    </div>
+
+                    <div class="modal-body" style="max-height: 27.5em">
+                        <div class="col-md-12" id="dataid" style="overflow-y: auto; max-height:25em;"></div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" data-dismiss="modal" class="btn btn-default pull-right m-l-5">Cancel</button>
+                        <button type="button" class="btn btn-default pull-right">Accept</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!--SETUP AUTOPAY-->
+        <div class="modal fade" id="setupautopay" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="modal-header p-b-30">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+						<div class="modal-body p-b-30">
+
+						<div class="col-md-12 d-flex justify-content-center">
+							<img src="assets/img/blank_image.png" alt="image" data-src="assets/img/blank_image.png">
+						</div>
+							
+						<div class="col-md-12 p-l-30 p-r-30">
+							<h4 class="modal-title p-t-20 text-center m-b-20" style="font-weight: 600;">AutoPay</h4>
+
+							<span>
+								Autopay is a safe, automatic and recurrent payment program 
+								that allows you to have your bill paid automatically each 
+								month from a designated bank account or credit card. You 
+								never have to worry about missing a payment. 
+							</span>
+						</div>
+
+						</div>
+
+                    <div class="modal-footer">
+                        <button type="button" data-dismiss="modal" class="btn btn-lg btn-default w-50" style="margin:5px;">Cancel</button>
+                        <button type="button" class="btn btn-lg btn-primary w-50" style="margin:5px;">Setup AutoPay</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+		<!--AUTOPAY ON-->
+        <div class="modal fade" id="autopayon" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+
+                    <div class="modal-header p-b-20">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">AutoPay:<span class="m-l-5">ON</span></h4>
+						<p class="font-italic">Payments are automatically scheduled</p>
+                    </div>
+
+                    <div class="modal-body">
+							<div class="row m-b-10">
+								<!--DATE PICKER-->
+								<div class="col-sm-12 col-md-8 p-b-10">
+									<div class="form-group form-group-default form-group-default-select2 required m-b-0">
+									<label>Payment Method</label>
+										<select class="full-width select2-hidden-accessible" data-placeholder="Select Country" data-init-plugin="select2" tabindex="-1" aria-hidden="true">
+											<optgroup label="Credit Card">
+												<option value="VISA">VISA ***5454</option>
+												<option value="MC">MASTER CARD ***6464</option>
+											</optgroup>
+
+											<optgroup label="Bank Account">
+												<option value="BOA">BOA(CH) ***4845</option>
+												<option value="PNC">PNC(SA) ***7845</option>
+											</optgroup>
+										</select>
+									</div>
+								</div>
+
+							<!--BUTTON-->
+							<div class="col-sm-12 col-md-4 p-b-10">
+								<a href="#" class="btn btn-lg btn-secondary w-100" role="button">Add New</a>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-md-12 p-b-10">
+								<div class="form-group form-group-default form-group-default-select2 required">
+								<label>Account Number</label>
+									<select class="full-width select2-hidden-accessible" data-placeholder="Select Country" data-init-plugin="select2" tabindex="-1" aria-hidden="true">
+											<option value="BOA">123456789ABC (ABC GAS AND ELECTRIC COMPANY)</option>
+											<option value="PNC">987654321ABC (ABC BANK)</option>								
+									</select>
+								</div>
+							</div>
+						</div>
+
+						<div class="row p-t-20 p-b-20 p-l-10 p-r-10 m-l-0 m-r-0 m-b-20 m-t-0" style="background-color:#F9F9F9;border-radius: 10px !important;">
+							<div class="col-md-6">
+								<div class="checkbox check-success">
+									<input type="checkbox" checked="checked" value="1" id="schpay">
+									<label for="schpay">Schedule Payments</label>
+								</div>
+
+								<div class="form-group form-group-default form-group-default-select2 required">
+								<label>Days after invoice date</label>
+									<select class="full-width select2-hidden-accessible" data-placeholder="Select Country" data-init-plugin="select2" tabindex="-1" aria-hidden="true">
+											<option value="number">1</option>
+											<option value="number">2</option>	
+											<option value="number">3</option>
+											<option value="number">4</option>	
+											<option value="number">5</option>
+											<option value="number">6</option>	
+											<option value="number">7</option>
+											<option value="number">8</option>						
+									</select>
+								</div>
+							</div> 
+
+							<div class="col-md-6">
+								<div class="checkbox check-success">
+									<input type="checkbox" value="1" id="maxpay">
+									<label for="maxpay">Maximum Payment Amount</label>
+								</div>
+
+								<div class="form-group form-group-default disabled" aria-required="true">
+									<label>Dollar Amount</label>
+									<input type="text" class="form-control" name="firstName" required="" aria-required="true" readonly="readonly" placeholder="$0.00">
+								</div>
+							</div>
+
+							<div class="col-md-12">
+								<p class="font-italic">
+								Maximum Autopay Amount Allowed (must not be $0.00 and this field will round to the nearest whole number)
+								<b>If not checked, no maximum will be applied.</b>
+								</p>
+							</div>
+						</div>
+
+
+                            <div class="card card-body trans-card p-t-5 p-b-5 ml-0">
+                                <div class="row p-t-20 p-b-20">
+                                    <div class="note-icon-lg col-md-1"><span class="material-icons align-middle" style="color: #00c1f3;opacity: 0.5;">info</span></div>
+                                    <div class="note-text-lg col-md-11">
+										<span>Your Autopay payment processing takes effect with your next billing cycle. 
+										If you have not paid your current balance yet, please be sure to make your payment 
+										before the due date.<br><br><b>By selecting "Update" you confirm that you have 
+										reviewed and agree to the</b><a href="#" class="text-complete p-l-5">AutoPay Terms & Conditions.</a>
+										</span>
+									</div>         
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" data-dismiss="modal" class="btn btn-lg btn-default pull-right m-l-5">Cancel</button>
+                        <button type="button" class="btn btn-lg btn-primary pull-right">Accept</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+		<!--AUTOPAY OFF-->
+        <div class="modal fade" id="autopayoff" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+
+                    <div class="modal-header p-b-20">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">AutoPay:<span class="m-l-5">OFF</span></h4>
+						<p class="font-italic">Payments are <b>NOT</b> automatically scheduled</p>
+                    </div>
+
+                    <div class="modal-body">
+							<div class="row m-b-10">
+								<!--DATE PICKER-->
+								<div class="col-sm-12 col-md-8 p-b-10">
+									<div class="form-group form-group-default form-group-default-select2 required m-b-0 disabled">
+									<label>Payment Method</label>
+										<select class="full-width select2-hidden-accessible" data-placeholder="Select Country" data-init-plugin="select2" tabindex="-1" aria-hidden="true" disabled>
+											<optgroup label="Credit Card">
+												<option value="VISA">VISA ***5454</option>
+												<option value="MC">MASTER CARD ***6464</option>
+											</optgroup>
+
+											<optgroup label="Bank Account">
+												<option value="BOA">BOA(CH) ***4845</option>
+												<option value="PNC">PNC(SA) ***7845</option>
+											</optgroup>
+										</select>
+									</div>
+								</div>
+
+							<!--BUTTON-->
+							<div class="col-sm-12 col-md-4 p-b-10">
+								<a href="#" class="btn btn-lg btn-disabled w-100 disabled" role="button">Add New</a>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-md-12 p-b-10">
+								<div class="form-group form-group-default form-group-default-select2 required disabled">
+								<label>Account Number</label>
+									<select class="full-width select2-hidden-accessible" data-placeholder="Select Country" data-init-plugin="select2" tabindex="-1" aria-hidden="true" disabled>
+											<option value="BOA">123456789ABC (ABC GAS AND ELECTRIC COMPANY)</option>
+											<option value="PNC">987654321ABC (ABC BANK)</option>								
+									</select>
+								</div>
+							</div>
+						</div>
+
+						<div class="row p-t-20 p-b-20 p-l-10 p-r-10 m-l-0 m-r-0 m-b-20 m-t-0" style="background-color:#F9F9F9;border-radius: 10px !important;">
+							<div class="col-md-6">
+								<div class="checkbox check-success">
+									<input type="checkbox" value="1" id="schpay" disabled>
+									<label for="schpay">Schedule Payments</label>
+								</div>
+
+								<div class="form-group form-group-default form-group-default-select2 disabled">
+								<label>Days after invoice date</label>
+									<select class="full-width select2-hidden-accessible" data-placeholder="Select Country" data-init-plugin="select2" tabindex="-1" aria-hidden="true" disabled>
+											<option value="number">1</option>
+											<option value="number">2</option>	
+											<option value="number">3</option>
+											<option value="number">4</option>	
+											<option value="number">5</option>
+											<option value="number">6</option>	
+											<option value="number">7</option>
+											<option value="number">8</option>						
+									</select>
+								</div>
+							</div> 
+
+							<div class="col-md-6">
+								<div class="checkbox check-success">
+									<input type="checkbox" value="1" id="maxpay" disabled>
+									<label for="maxpay">Maximum Payment Amount</label>
+								</div>
+
+								<div class="form-group form-group-default disabled" aria-required="true">
+									<label>Dollar Amount</label>
+									<input type="text" class="form-control" name="firstName" required="" aria-required="true" readonly="readonly" placeholder="$0.00" disabled>
+								</div>
+							</div>
+
+							<div class="col-md-12">
+								<p class="font-italic">
+								Maximum Autopay Amount Allowed (must not be $0.00 and this field will round to the nearest whole number)
+								<b>If not checked, no maximum will be applied.</b>
+								</p>
+							</div>
+						</div>
+
+
+                            <div class="card card-body trans-card p-t-5 p-b-5 ml-0">
+                                <div class="row p-t-20 p-b-20">
+                                    <div class="note-icon-lg col-md-1"><span class="material-icons align-middle" style="color: #00c1f3;opacity: 0.5;">info</span></div>
+                                    <div class="note-text-lg col-md-11">
+										<span>Your Autopay payment processing takes effect with your next billing cycle. 
+										If you have not paid your current balance yet, please be sure to make your payment 
+										before the due date.<br><br><b>By selecting "Update" you confirm that you have 
+										reviewed and agree to the</b><a href="#" class="text-complete p-l-5">AutoPay Terms & Conditions.</a>
+										</span>
+									</div>         
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" data-dismiss="modal" class="btn btn-lg btn-default pull-right m-l-5">Cancel</button>
+                        <button type="button" class="btn btn-lg btn-primary pull-right">Accept</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--ADD PAYMENT-->
+        <div class="modal fade" id="addpayment" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="modal-header p-b-20">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">AutoPay:<span class="m-l-5">OFF</span></h4>
+						<p class="font-italic">Payments are not automatically scheduled</p>
+                    </div>
+
+                    <div class="modal-body p-b-0">
+							<div class="row">
+								<div class="col-sm-12 col-md-12 col-lg-12 m-b-10">
+									<ul class="nav nav-pills" id="myTab" role="tablist">
+										<li class="nav-item m-10 w-100">
+											<a class="nav-link active text-center" id="creditcard-tab" data-toggle="tab" href="#creditcard" role="tab" aria-controls="creditcard" aria-selected="false"><span>Credit Card</span></a>
+										</li>
+										<li class="nav-item m-10 w-100">
+											<a class="nav-link text-center" id="bank-tab" data-toggle="tab" href="#bank" role="tab" aria-controls="bank" aria-selected="false"><span>Bank Account</span></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="tab-content" id="myTabContent">
+								<div class="tab-pane fade show active" id="creditcard" role="tabpanel" aria-labelledby="creditcard-tab">
+									<!--CREDIT CARD START-->
+										<form role="form" autocomplete="off" class="js--form-validation">
+										<div class="form-group m-b-20">
+
+											<div class="row">
+                                            <!--NAME-->
+												<div class="col-md-12">
+													<div class="form-group form-group-default required" aria-required="true">
+														<label>Cardholder Name</label>
+
+														<input type="text" class="form-control" name="firstName" required="" aria-required="true">
+													</div>
+												</div>
+											</div>
+
+											<div class="row">
+                                            	<!--ADDRESS-->
+												<div class="col-md-8">
+													<div class="form-group form-group-default required" aria-required="true">
+														<label>Street Address</label>
+
+														<input type="text" class="form-control" name="address" required="" aria-required="true">
+													</div>
+												</div>
+											
+                                                <!--ZIPCODE-->
+												<div class="col-md-4">
+													<div class="form-group form-group-default required" aria-required="true">
+														<label>ZIP Code</label>
+
+														<input type="text" class="form-control" name="zipCode" required="" aria-required="true">
+													</div>
+												</div>
+
+											</div>
+										</div>
+
+                                        <div class="form-group m-b-0">
+										<!--CREDIT CARD LOGOS-->
+										<div class="row m-b-10">
+											<div class="col-sm-12 m-r-5 p-r-0">
+												<img src="assets/img/visa.png" alt="logo" data-src="assets/img/visa.png">
+												<img src="assets/img/amex.png" alt="logo" data-src="assets/img/amex.png">
+												<img src="assets/img/mastercard.png" alt="logo" data-src="assets/img/mastercard.png">
+												<img src="assets/img/discover.png" alt="logo" data-src="assets/img/discover.png">		
+											</div>
+										</div>
+
+											<div class="row">
+                                                <!--CARD NUMBER-->
+												<div class="col-md-12">
+													<div class="form-group form-group-default required" aria-required="true">
+														<label>Card Number</label>
+														<input type="text" class="form-control" name="address" required="" aria-required="true">
+													</div>
+												</div>
+											</div>
+
+											<div class="row">
+                                                <!--EXP MONTH-->
+												<div class="col-md-4">
+													<div class="form-group form-group-default form-group-default-select2 required">
+														<label>Exp Month</label>
+														<select class="full-width" data-init-plugin="select2">
+															<option value=""></option>
+															<option value="">Option 1</option>
+															<option value="">Option 2</option>
+														</select>
+													</div>
+												</div>
+
+                                                <!--EXP YEAR-->
+												<div class="col-md-4">
+													<div class="form-group form-group-default form-group-default-select2 required">
+														<label>Exp Year</label>
+														<select class="full-width" data-init-plugin="select2">
+															<option value=""></option>
+															<option value="">Option 1</option>
+															<option value="">Option 2</option>
+														</select>
+													</div>
+												</div>
+
+                                                <!--SECURITY CODE-->
+												<div class="col-md-4">
+													<div class="form-group form-group-default required" aria-required="true">
+														<label>Security Code</label>
+														<input type="text" class="form-control" name="zipCode" required="" aria-required="true">
+													</div>
+												</div>
+											</div>	
+										</div>
+									</form>
+									<!--CREDIT CARD END-->
+								</div>
+
+									<!--TAB 2-->
+									<div class="tab-pane fade" id="bank" role="tabpanel" aria-labelledby="bank-tab">
+									<!--BANK ACCOUNT START-->
+									<form role="form" autocomplete="off" class="js--form-validation">
+										<div class="form-group">
+											<div class="row">
+                                            <!--NAME-->
+												<div class="col-md-12">
+													<div class="form-group form-group-default required" aria-required="true">
+														<label>Account Holder Name</label>
+														<input type="text" class="form-control" name="Name" required="" aria-required="true">
+													</div>
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-md-12">
+													<div class="form-group form-group-default required" aria-required="true">
+														<label>Routing Number</label>
+														<input type="text" class="form-control" name="firstName" required="" aria-required="true">
+													</div>
+												</div>
+											</div>          
+
+											<div class="row">
+                                            <!--NAME-->
+												<div class="col-md-6">
+													<div class="form-group form-group-default required" aria-required="true">
+														<label>Account Number</label>
+														<input type="text" class="form-control" name="accountnumber" required="" aria-required="true">
+													</div>
+												</div>
+
+												<div class="col-md-6">
+													<div class="form-group form-group-default required" aria-required="true">
+														<label>Confirm Account Number</label>
+														<input type="text" class="form-control" name="confaccountnumber" required="" aria-required="true">
+													</div>
+												</div>
+                                            </div>
+										</div>
+									</form>
+									<!--BANK ACCOUNT END-->
+									</div>
+									<!--TAB 2 END-->
+								</div>
+                    </div>
+
+					<div class="row p-l-15 p-r-15">
+						<div class="col-sm-12 col-md-12 col-lg-12 p-l-25 p-r-25 p-t-5">
+							<div class="checkbox check-success padding-15" style="background-color: #f5f6f7;border-radius: 4px;">
+								<input checked="checked" id="defcheckbox" type="checkbox" value="1"> <label for="defcheckbox">Default Payment Method</label>
+							</div>
+						</div>
+					</div>
+
+
+                    <div class="modal-footer p-t-15">
+                        <button type="button" data-dismiss="modal" class="btn btn-lg btn-default pull-right m-l-5">Cancel</button>
+                        <button type="button" class="btn btn-lg btn-primary pull-right">Save</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!--AUTOPAY COMPLETE-->
+        <div class="modal fade" id="autopaycomplete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="modal-header p-b-30">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+						<div class="modal-body p-b-30">
+
+						<div class="col-md-12 d-flex justify-content-center">
+							<img src="assets/img/blank_image.png" alt="image" data-src="assets/img/blank_image.png">
+						</div>
+							
+						<div class="col-md-12 p-l-30 p-r-30">
+							<h4 class="modal-title p-t-20 text-center m-b-20" style="font-weight: 600;">AutoPay Complete</h4>
+
+							<span>
+								Autopay is a safe, automatic and recurrent payment program 
+								that allows you to have your bill paid automatically each 
+								month from a designated bank account or credit card. You 
+								never have to worry about missing a payment. 
+							</span>
+						</div>
+
+						</div>
+
+                    <div class="modal-footer d-flex justify-content-center">
+                        <button type="button" data-dismiss="modal" class="btn btn-lg btn-default w-50">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+		<!--NEW TERMS-->
+        <div class="modal fade" id="paymentschedule" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                        <div class="modal-header p-b-30">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Recurring Plan Schedule: LOAN-51-3792172</h4>
+                        </div>
+
+                        <div class="modal-body">
+                              <table class="table table-striped">
+								<thead>
+								<tr>
+									<th>Install</th>
+									<th>Date</th>
+									<th>Payment Total</th>
+									<th>Payment Method</th>
+									<th>Status</th>
+								</tr>
+								
+								</thead>
+								<tbody>
+								
+								<tr>
+									<td class="v-align-middle">6</td>
+									<td class="v-align-middle">July 29, 2020</td>
+									<td class="v-align-middle">$50.00</td>
+									<td class="v-align-middle">None Selected</td>
+									<td class="v-align-middle">Incomplete</td>
+								</tr>
+								
+								<tr>
+									<td class="v-align-middle">6</td>
+									<td class="v-align-middle">July 29, 2020</td>
+									<td class="v-align-middle">$50.00</td>
+									<td class="v-align-middle">None Selected</td>
+									<td class="v-align-middle">Incomplete</td>
+								</tr>
+								
+								<tr>
+									<td class="v-align-middle">6</td>
+									<td class="v-align-middle">July 29, 2020</td>
+									<td class="v-align-middle">$50.00</td>
+									<td class="v-align-middle">None Selected</td>
+									<td class="v-align-middle">Incomplete</td>
+								</tr>
+								
+								</tbody>
+							</table>
+                        </div>
+
+						<div class="modal-body">
+							<div class="row b-l b-r b-t b-grey no-margin p-t-15">
+								<div class="col-12 col-sm-8 p-b-15">
+									Payments to <span class="InvoiceNoHeader text-uppercase">LOAN-51-3792172</span>:
+								</div>
+								
+								<div class="col-12 col-sm-4 text-sm-right p-b-15" id="dvTotalInvoiceAmount">$36.00</div>
+							</div>
+
+							<div class="row b-l b-r b-b b-t b-grey no-margin">
+								<div class="col-12 col-sm-8 p-t-15 p-b-15">
+									Total Payment Amount:
+								</div>
+
+								<div class="col-12 col-sm-4 text-sm-right bg-master-lighter p-t-15 p-b-15">
+									<span class="bold" id="spnTotalDuewithFees">$36.00</span>
+								</div>
+                        	</div>
+						</div>
+
+						<div class="modal-body">
+							<div class="row">
+								<div class="col-md-12">
+									<p class="pull-left">
+									<span class="hint-text">Please </span>
+									<a style="cursor:pointer" class="text-primary"><u>contact support</u></a>
+									<span class="hint-text"> to modify this <span class="clsPaymentPlan">Recurring Plan</span>.</span>
+									</p>
+								</div>
+							</div>
+						</div>
+
+                        <div class="modal-footer">
+                            <button type="button" data-dismiss="modal" class="btn btn-default btn-lg pull-right m-l-5" onclick="modalclose();">Close</button>
+                        </div>
+                </div>
+     
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+    <!--MODAL RECEPT-->
+    <div class="modal fade slide-up" id="modalReceipt" tabindex="-1" role="dialog" aria-labelledby="modalSlideUpLabel" aria-hidden="false">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content-wrapper">
+                <div class="modal-content">
+
+                    <div class="modal-header p-b-30">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <div class="row">
+                            <div class="col-md-12 modal-receipt-logocol">
+                                <img alt="logo" data-src="#" class="modal-receipt-logo" style="max-height:40px;">
+                            </div>
+
+                            <div class="col-md-12">
+                                <h5 class="m-t-10">
+                                    Receipt: <span class="hidePayAnytime">Payment to </span><span style="width:400px;" class="hidePayAnytime textwrap lblreceiptinvoicenumber"></span>
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="Modelcontent" class="PrintReceiptHTML">
+                        <div class="modal-body" style="min-height:100px;max-height:610px;overflow:auto">
+                            <div class="row m-b-20">
+                                <div class="col-12 p-l-15 p-r-15">
+                                    <div class="row b-l b-r b-b b-t b-grey no-margin p-t-15">
+                                        <div class="col-6 p-b-15">
+                                            <span class="clsHistoryID"></span>:
+                                        </div>
+
+                                        <div class="col-6 text-right p-b-15">
+                                            <span id="lblHistoryID"></span>
+                                        </div>
+                                    </div><!-- /.row -->
+
+                                    <div class="row b-l b-r b-b b-grey no-margin p-t-15">
+                                        <div class="col-6 p-b-15">
+                                            Customer Name:
+                                        </div>
+
+                                        <div class="col-6 text-right p-b-15 overflow-wrap">
+                                            <span id="lblCustomerName"></span>
+                                        </div>
+                                    </div><!-- /.row -->
+
+                                    <div class="row b-l b-r b-b b-grey no-margin p-t-15">
+                                        <div class="col-6 p-b-15">
+                                            Payment Date:
+                                        </div>
+
+                                        <div class="col-6 text-right p-b-15">
+                                            <span id="lbldatepaid"></span>
+                                        </div>
+                                    </div><!-- /.row -->
+
+                                    <div class="row b-l b-r b-b b-grey no-margin p-t-15">
+                                        <div class="col-6 p-b-15">
+                                            Installment:
+                                        </div>
+
+                                        <div class="col-6 text-right p-b-15">
+                                            <span id="lblInstallment"></span>
+                                        </div>
+                                    </div><!-- /.row -->
+
+                                    <div class="row b-l b-r b-b b-grey no-margin p-t-15">
+                                        <div class="col-6 p-b-15">
+                                            Payment Method:
+                                        </div>
+
+                                        <div class="col-6 text-right p-b-15">
+                                            <span id="lblPaymentType"></span>
+                                        </div>
+                                    </div><!-- /.row -->
+
+                                    <div class="row b-l b-r b-b b-grey no-margin p-t-15">
+                                        <div class="col-6 p-b-15 paymentMethodCardNumberInnerDiv">
+                                            <span id="paymentTypeLabel">Card Number:</span>
+                                        </div>
+
+                                        <div class="col-6 text-right p-b-15">
+                                            <span id="lblLast4Digits"></span>
+                                        </div>
+                                    </div>
+
+                                    @if (PaymentHelper.AllowPaymentNotes())
+                                    {
+                                        <div class="row b-l b-r b-b b-t b-grey no-margin p-t-15">
+                                            <div class="col-12 col-sm-4 p-b-15">
+                                                <span id="lbltype"> Payment Comment:</span>
+                                            </div>
+
+                                            <div class="col-12 col-sm-8 text-sm-right p-b-15" style="word-wrap: break-word">
+                                                <span id="lblPaymentNote"></span>
+
+                                            </div>
+                                        </div>
+                                    }
+
+                                    <div class="row b-l b-r b-b b-grey no-margin p-t-15 inpersonElement" style="display:none;">
+                                        <div class="col-6 p-b-15">In-Person Payment Type:</div>
+                                        <div class="col-6 text-right p-b-15"><span id="lblInPersonPaymentType"></span></div>
+                                    </div><!-- /.row -->
+                                    <div class="row b-l b-r b-b b-grey no-margin p-t-15 inpersonElement" id="divDateTimePaymentRecorded" style="display:none;">
+                                        <div class="col-6 p-b-15">Date/Time Payment Recorded:</div>
+                                        <div class="col-6 text-right p-b-15"><span id="lblDateTimePaymentRecorded"></span></div>
+                                    </div><!-- /.row -->
+                                    <div class="row b-l b-r b-b b-grey no-margin p-t-15 inpersonElement" style="display:none;">
+                                        <div class="col-6 p-b-15"><span id="lblAuthenticationCodeLiteral"></span>:</div>
+                                        <div class="col-6 text-right p-b-15"><span id="lblAuthenticationCode"></span></div>
+                                    </div><!-- /.row -->
+                                    <div class="row b-l b-r b-b b-grey no-margin p-t-15 inpersonElement" id="divDriversLicenseNumber" style="display:none;">
+                                        <div class="col-6 p-b-15">Drivers License Number:</div>
+                                        <div class="col-6 text-right p-b-15"><span id="lblDriversLicenseNumber"></span></div>
+                                    </div><!-- /.row -->
+
+                                </div>
+                            </div>
+                            <div class="row m-b-20">
+                                <div class="col-12 p-l-15 p-r-15">
+                                    <div class="row b-l b-r b-b b-t b-grey no-margin p-t-15">
+                                        <div class="col-10 p-b-15">
+                                            Payment to: <span class="textwrap lblreceiptinvoicenumber"></span>
+                                        </div>
+                                        <div class="col-2 text-right p-b-15">
+                                            <span class="lblAmountPaid"></span>
+                                        </div>
+                                    </div>
+                                    <div class="row b-l b-r b-b b-t b-grey no-margin p-t-15 rowanElements" style="display:none;">
+                                        <div class="col-6 p-b-15">Amount Due:</div>
+                                        <div class="col-6 text-right p-b-15"><span id="lblAmountDue"></span></div>
+                                    </div>
+
+                                    <div class="row b-l b-r b-b b-t b-grey no-margin p-t-15 rowanElements" style="display:none;">
+                                        <div class="col-6 p-b-15">Invoice Date:</div>
+                                        <div class="col-6 text-right p-b-15"><span id="lblInvoiceDate"></span></div>
+                                    </div>
+                                    <div class="row b-l b-r b-b b-t b-grey no-margin p-t-15 rowanElements" style="display:none;">
+                                        <div class="col-6 p-b-15">Parcel ID:</div>
+                                        <div class="col-6 text-right p-b-15"><span id="lblParcelID"></span></div>
+                                    </div>
+                                    <div class="row b-l b-r b-b b-t b-grey no-margin p-t-15 rowanElements" style="display:none;">
+                                        <div class="col-6 p-b-15">Tax Year:</div>
+                                        <div class="col-6 text-right p-b-15">
+                                            <span id="lblTaxYear"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="row b-l b-r b-b b-t b-grey no-margin p-t-15">
+                                        <div class="col-6 p-b-15"><span class="ClsConvenienceFees">Convenience Fees</span>:</div>
+                                        <div class="col-6 text-right p-b-15">
+                                            <span id="lblConvenienceFees"></span>
+                                        </div>
+                                    </div>
+                                    <div class="row b-l b-r b-b b-t b-grey no-margin p-t-15">
+                                        <div class="col-6 p-b-15">Plan Fees:</div>
+                                        <div class="col-6 text-right p-b-15">
+                                            <span id="lblPlanFees"></span>
+                                        </div>
+                                    </div>
+                                    <div class="row b-l b-r b-b b-grey no-margin">
+                                        <div class="col-6 p-t-15 p-b-15">
+                                            Total Payment Amount:
+                                        </div>
+
+                                        <div class="col-6 text-right bg-master-lighter p-t-15 p-b-15">
+                                            <span id="lblAmountPaid" class="bold lblTotalAmountPaid"></span>
+                                        </div><!-- /.col-4 -->
+                                    </div><!-- /.row -->
+                                </div><!-- /.col-12 -->
+                            </div><!-- /.row -->
+
+                            <div class="row m-b-20 hidePayAnytime" id="RemainingDuedata">
+                                <div class="col-12 p-l-15 p-r-15">
+                                    <div class="row b-l b-r b-b b-t b-grey no-margin p-t-15">
+                                        <div class="col-8 p-b-15">
+                                            Remaining Balance for <span class="lblreceiptinvoicenumber"></span>:
+                                        </div>
+
+                                        <div class="col-4 text-right p-b-15">
+                                            <span class="bold " id="lblAmountPaid"> </span>
+                                        </div>
+                                    </div><!-- /.row -->
+                                </div><!-- /.col-12 -->
+                            </div><!-- /.row -->
+
+                            <div class="p-t-15 p-b-15 p-l-20 p-r-20 m-b-20 bg-danger-lighter" id="dvIsrefund">
+                                <p class="no-margin">
+                                    <span class="text-danger">*This payment has been issued a full or partial refund.</span>
+
+                                    <span id="aRefundReceipt">
+
+                                    </span>
+                                </p>
+                            </div>
+
+                            <div class="m-t-30 no-print">
+                                <button class="btn btn-default btn-cons pull-right m-b-20" data-dismiss="modal" aria-hidden="true">Close</button>
+
+                                <div class="btn-group pull-right m-r-15" role="group">
+                                    @if (isRegistered)
+                                    {
+                                        <button class="btn btn-default" onclick="EmailReceipt(0);"><span class="fa fa-envelope"></span></button>
+                                    }
+                                    else
+                                    {
+                                        <button class="btn btn-default" onclick="OpenCustomerEmailReceiptModal('@SessionHelper.CustomerEmail','transactionhistory');"><span class="fa fa-envelope"></span></button>
+                                    }
+
+                                    <button class="btn btn-default" onclick="window.print();">
+                                        <span class="fa fa-print"></span>
+                                    </button>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+
+
+
+
+
+
+
+
+
+
+        </div>
+</div>
+
+
+	<!-- BEGIN VENDOR JS -->
+	<script src="assets/plugins/pace/pace.min.js" type="text/javascript"></script>
+	<script src="assets/plugins/jquery/jquery-3.2.1.min.js" type="text/javascript"></script>
+	<script src="assets/plugins/modernizr.custom.js" type="text/javascript"></script>
+	<script src="assets/plugins/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
+	<script src="assets/plugins/tether/js/tether.min.js" type="text/javascript"></script>
+	<script src="assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="assets/plugins/jquery/jquery-easy.js" type="text/javascript"></script>
+	<script src="assets/plugins/jquery-unveil/jquery.unveil.min.js" type="text/javascript"></script>
+	<script src="assets/plugins/jquery-bez/jquery.bez.min.js"></script>
+	<script src="assets/plugins/jquery-ios-list/jquery.ioslist.min.js" type="text/javascript"></script>
+	<script src="assets/plugins/bootstrap-select2/select2.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="assets/plugins/jquery-validation/js/jquery.validate.min.js"></script>
+	<script src="assets/plugins/classie/classie.js" type="text/javascript"></script>
+	<script src="assets/plugins/imagesloaded/imagesloaded.pkgd.min.js"></script>
+	<script src="assets/plugins/jquery-actual/jquery.actual.min.js"></script>
+	<script src="assets/plugins/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+	<script type="text/javascript" src="assets/plugins/bootstrap-form-wizard/js/jquery.bootstrap.wizard.min.js"></script>
+	<script type="text/javascript" src="assets/plugins/jquery-datatable/media/js/jquery.dataTables.min.js"></script>
+	<script type="text/javascript" src="assets/plugins/jquery-datatable/extensions/TableTools/js/dataTables.tableTools.min.js"></script>
+	<script type="text/javascript" src="assets/plugins/jquery-datatable/extensions/Bootstrap/jquery-datatable-bootstrap.js"></script>
+	<script src="assets/plugins/datatables-responsive/js/datatables.responsive.js" type="text/javascript"></script>
+	<script src="assets/plugins/datatables-responsive/js/lodash.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="assets/plugins/jquery-validation/js/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+
+	<!-- END VENDOR JS -->
+	<!-- BEGIN CORE TEMPLATE JS -->
+	<script src="pages/js/pages.js" type="text/javascript"></script>
+	<!-- END CORE TEMPLATE JS -->
+	<!-- BEGIN PAGE LEVEL JS -->
+	<script src="assets/js/scripts.js" type="text/javascript"></script>
+	<!-- END PAGE LEVEL JS -->
+</body>
+</html>
